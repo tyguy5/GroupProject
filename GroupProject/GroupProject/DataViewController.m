@@ -27,6 +27,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.dataLabel.text = [self.dataObject description];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 @end
