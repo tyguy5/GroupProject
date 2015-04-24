@@ -89,12 +89,7 @@
 			children = (
 				2F536EA31AE9EB7A00D7E696 /* AppDelegate.h */,
 				2F536EA41AE9EB7A00D7E696 /* AppDelegate.m */,
-				2F536EA61AE9EB7A00D7E696 /* RootViewController.h */,
-				2F536EA71AE9EB7A00D7E696 /* RootViewController.m */,
-				2F536EA91AE9EB7A00D7E696 /* DataViewController.h */,
-				2F536EAA1AE9EB7A00D7E696 /* DataViewController.m */,
-				2F536EAC1AE9EB7A00D7E696 /* ModelController.h */,
-				2F536EAD1AE9EB7A00D7E696 /* ModelController.m */,
+				2F536ECB1AEA0F7900D7E696 /* OnboardingProcess */,
 				2F536EAF1AE9EB7A00D7E696 /* Main.storyboard */,
 				2F536EB21AE9EB7A00D7E696 /* Images.xcassets */,
 				2F536EB41AE9EB7A00D7E696 /* LaunchScreen.xib */,
@@ -127,6 +122,19 @@
 				2F536EC01AE9EB7A00D7E696 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F536ECB1AEA0F7900D7E696 /* OnboardingProcess */ = {
+			isa = PBXGroup;
+			children = (
+				2F536EA61AE9EB7A00D7E696 /* RootViewController.h */,
+				2F536EA71AE9EB7A00D7E696 /* RootViewController.m */,
+				2F536EA91AE9EB7A00D7E696 /* DataViewController.h */,
+				2F536EAA1AE9EB7A00D7E696 /* DataViewController.m */,
+				2F536EAC1AE9EB7A00D7E696 /* ModelController.h */,
+				2F536EAD1AE9EB7A00D7E696 /* ModelController.m */,
+			);
+			name = OnboardingProcess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +436,7 @@
 				2F536EC71AE9EB7A00D7E696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F536EC81AE9EB7A00D7E696 /* Build configuration list for PBXNativeTarget "GroupProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +445,7 @@
 				2F536ECA1AE9EB7A00D7E696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
