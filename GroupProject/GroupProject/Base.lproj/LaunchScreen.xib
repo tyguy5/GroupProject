@@ -10,69 +10,63 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="hand" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="wz1-1I-QPO">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="172" id="Fdk-Eq-NEV">
-                            <variation key="widthClass=compact" constant="218"/>
-                        </constraint>
-                        <constraint firstAttribute="height" constant="172" id="nTh-02-CH3">
-                            <variation key="widthClass=compact" constant="218"/>
-                        </constraint>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Fdk-Eq-NEV"/>
-                            <exclude reference="nTh-02-CH3"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="Fdk-Eq-NEV"/>
-                            <include reference="nTh-02-CH3"/>
-                        </mask>
-                    </variation>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RememberIt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyu-lZ-e58">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.46274509803921571" green="0.38039215686274508" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-an-8BN">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="KzP-6g-Ejz"/>
+                        <constraint firstAttribute="height" constant="170" id="hdl-0K-peH"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KzP-6g-Ejz"/>
+                            <exclude reference="hdl-0K-peH"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="KzP-6g-Ejz"/>
+                            <include reference="hdl-0K-peH"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="wz1-1I-QPO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="I5n-cK-Puw">
-                    <variation key="widthClass=compact" constant="-131"/>
-                </constraint>
-                <constraint firstItem="wz1-1I-QPO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c9T-88-SWN"/>
-                <constraint firstItem="Tyu-lZ-e58" firstAttribute="centerX" secondItem="wz1-1I-QPO" secondAttribute="centerX" id="mrx-jY-pS9"/>
-                <constraint firstItem="Tyu-lZ-e58" firstAttribute="top" secondItem="wz1-1I-QPO" secondAttribute="bottom" constant="8" symbolic="YES" id="ygg-bX-ect"/>
+                <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="Tyu-lZ-e58" secondAttribute="centerX" id="Fnu-q8-fhJ"/>
+                <constraint firstItem="VFR-an-8BN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="L1d-of-7Ub"/>
+                <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WjX-Wd-JbD"/>
+                <constraint firstItem="Tyu-lZ-e58" firstAttribute="top" secondItem="VFR-an-8BN" secondAttribute="bottom" constant="16" id="wi7-nA-Fds"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="wz1-1I-QPO"/>
                     <exclude reference="Tyu-lZ-e58"/>
+                    <exclude reference="VFR-an-8BN"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="I5n-cK-Puw"/>
-                    <exclude reference="c9T-88-SWN"/>
-                    <exclude reference="mrx-jY-pS9"/>
-                    <exclude reference="ygg-bX-ect"/>
+                    <exclude reference="Fnu-q8-fhJ"/>
+                    <exclude reference="L1d-of-7Ub"/>
+                    <exclude reference="WjX-Wd-JbD"/>
+                    <exclude reference="wi7-nA-Fds"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
-                    <include reference="wz1-1I-QPO"/>
                     <include reference="Tyu-lZ-e58"/>
+                    <include reference="VFR-an-8BN"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="I5n-cK-Puw"/>
-                    <include reference="c9T-88-SWN"/>
-                    <include reference="mrx-jY-pS9"/>
-                    <include reference="ygg-bX-ect"/>
+                    <include reference="Fnu-q8-fhJ"/>
+                    <include reference="L1d-of-7Ub"/>
+                    <include reference="WjX-Wd-JbD"/>
+                    <include reference="wi7-nA-Fds"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>
