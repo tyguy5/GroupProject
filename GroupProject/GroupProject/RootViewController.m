@@ -34,7 +34,7 @@
 
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
-    self.view.backgroundColor = [UIColor colorWithRed:72.0f/255.0f green:234.0f/255.0f blue:175.0f/255.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor whiteColor];
 
     // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
     CGRect pageViewRect = self.view.bounds;
