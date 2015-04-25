@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CFAE0B61AEC179B00920265 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAE0B41AEC179B00920265 /* Model.xcdatamodeld */; };
+		2CFAE0B81AEC17C700920265 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFAE0B71AEC17C700920265 /* CoreData.framework */; };
+		2CFAE0BF1AEC199F00920265 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAE0BE1AEC199F00920265 /* Entry.m */; };
+		2CFAE0C21AEC19CC00920265 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAE0C11AEC19CC00920265 /* EntryController.m */; };
+		2CFAE0C51AEC19EA00920265 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAE0C41AEC19EA00920265 /* Stack.m */; };
 		2F536EA21AE9EB7A00D7E696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F536EA11AE9EB7A00D7E696 /* main.m */; };
 		2F536EA51AE9EB7A00D7E696 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F536EA41AE9EB7A00D7E696 /* AppDelegate.m */; };
 		2F536EA81AE9EB7A00D7E696 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F536EA71AE9EB7A00D7E696 /* RootViewController.m */; };
@@ -29,6 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CFAE0B51AEC179B00920265 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2CFAE0B71AEC17C700920265 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2CFAE0BD1AEC199F00920265 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		2CFAE0BE1AEC199F00920265 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		2CFAE0C01AEC19CC00920265 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		2CFAE0C11AEC19CC00920265 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		2CFAE0C31AEC19EA00920265 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		2CFAE0C41AEC19EA00920265 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		2F536E9C1AE9EB7A00D7E696 /* GroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F536EA01AE9EB7A00D7E696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F536EA11AE9EB7A00D7E696 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFAE0B81AEC17C700920265 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CFAE0BC1AEC182700920265 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				2CFAE0BD1AEC199F00920265 /* Entry.h */,
+				2CFAE0BE1AEC199F00920265 /* Entry.m */,
+				2CFAE0C01AEC19CC00920265 /* EntryController.h */,
+				2CFAE0C11AEC19CC00920265 /* EntryController.m */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
 		2F536E931AE9EB7A00D7E696 = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +116,13 @@
 				2F536EA41AE9EB7A00D7E696 /* AppDelegate.m */,
 				2F536ECB1AEA0F7900D7E696 /* OnboardingProcess */,
 				2F536EAF1AE9EB7A00D7E696 /* Main.storyboard */,
+				2CFAE0BC1AEC182700920265 /* Add */,
 				2F536EB21AE9EB7A00D7E696 /* Images.xcassets */,
 				2F536EB41AE9EB7A00D7E696 /* LaunchScreen.xib */,
+				2CFAE0C31AEC19EA00920265 /* Stack.h */,
+				2CFAE0C41AEC19EA00920265 /* Stack.m */,
+				2CFAE0B71AEC17C700920265 /* CoreData.framework */,
+				2CFAE0B41AEC179B00920265 /* Model.xcdatamodeld */,
 				2F536E9F1AE9EB7A00D7E696 /* Supporting Files */,
 			);
 			path = GroupProject;
@@ -237,11 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFAE0C51AEC19EA00920265 /* Stack.m in Sources */,
 				2F536EAB1AE9EB7A00D7E696 /* DataViewController.m in Sources */,
 				2F536EA51AE9EB7A00D7E696 /* AppDelegate.m in Sources */,
+				2CFAE0C21AEC19CC00920265 /* EntryController.m in Sources */,
 				2F536EAE1AE9EB7A00D7E696 /* ModelController.m in Sources */,
+				2CFAE0BF1AEC199F00920265 /* Entry.m in Sources */,
 				2F536EA21AE9EB7A00D7E696 /* main.m in Sources */,
 				2F536EA81AE9EB7A00D7E696 /* RootViewController.m in Sources */,
+				2CFAE0B61AEC179B00920265 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +482,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2CFAE0B41AEC179B00920265 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2CFAE0B51AEC179B00920265 /* Model.xcdatamodel */,
+			);
+			currentVersion = 2CFAE0B51AEC179B00920265 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2F536E941AE9EB7A00D7E696 /* Project object */;
 }
