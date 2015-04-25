@@ -381,44 +381,46 @@
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngX-l7-qD1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Share">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="180" y="199" width="40" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="shareButtonTapped:" destination="I3A-uu-gCa" eventType="touchUpInside" id="raM-c8-ZMc"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-Da-zFg">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Rate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="184" y="372" width="32" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="rateButtonTapped:" destination="I3A-uu-gCa" eventType="touchUpInside" id="ALT-MU-RLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngX-l7-qD1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="I3A-uu-gCa" eventType="touchUpInside" id="raM-c8-ZMc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2Lg-NS-anz" firstAttribute="bottom" secondItem="ByE-vS-iPv" secondAttribute="bottom" id="0Oh-Sd-jHL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RcV-Bd-815" secondAttribute="trailing" constant="33" id="3y5-a7-0CI"/>
                             <constraint firstItem="lQN-hf-ftW" firstAttribute="centerY" secondItem="zGn-eh-MOH" secondAttribute="centerY" id="5Nc-K4-Aik"/>
+                            <constraint firstItem="ngX-l7-qD1" firstAttribute="top" secondItem="ByE-vS-iPv" secondAttribute="bottom" constant="135" id="HUd-W4-3jg">
+                                <variation key="widthClass=compact" constant="166"/>
+                            </constraint>
                             <constraint firstItem="RcV-Bd-815" firstAttribute="baseline" secondItem="lQN-hf-ftW" secondAttribute="baseline" id="MAq-hN-UHh"/>
                             <constraint firstItem="RcV-Bd-815" firstAttribute="leading" secondItem="m3X-of-366" secondAttribute="trailing" constant="19" id="VwS-JI-Zcg"/>
+                            <constraint firstItem="0DU-Z7-xkC" firstAttribute="top" secondItem="LhK-Da-zFg" secondAttribute="bottom" constant="149" id="f7H-Ta-xgt">
+                                <variation key="widthClass=compact" constant="181"/>
+                            </constraint>
+                            <constraint firstItem="LhK-Da-zFg" firstAttribute="centerX" secondItem="m3X-of-366" secondAttribute="centerX" id="frD-Pz-0Bw"/>
                             <constraint firstItem="m3X-of-366" firstAttribute="leading" secondItem="lQN-hf-ftW" secondAttribute="trailing" constant="18" id="fxG-uL-kk3"/>
                             <constraint firstItem="lQN-hf-ftW" firstAttribute="leading" secondItem="zGn-eh-MOH" secondAttribute="leadingMargin" constant="38" id="jVX-u1-55N"/>
+                            <constraint firstItem="ngX-l7-qD1" firstAttribute="centerX" secondItem="m3X-of-366" secondAttribute="centerX" id="jvx-SK-PbH"/>
+                            <constraint firstItem="2Lg-NS-anz" firstAttribute="centerX" secondItem="ngX-l7-qD1" secondAttribute="centerX" id="qeX-5t-lcL"/>
                             <constraint firstItem="lQN-hf-ftW" firstAttribute="centerY" secondItem="m3X-of-366" secondAttribute="centerY" id="tR4-FQ-Uom"/>
+                            <constraint firstItem="2Lg-NS-anz" firstAttribute="leading" secondItem="zGn-eh-MOH" secondAttribute="leading" id="yeg-oq-dfn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -426,17 +428,24 @@
                                 <exclude reference="lQN-hf-ftW"/>
                                 <exclude reference="m3X-of-366"/>
                                 <exclude reference="2Lg-NS-anz"/>
-                                <exclude reference="ngX-l7-qD1"/>
                                 <exclude reference="LhK-Da-zFg"/>
+                                <exclude reference="ngX-l7-qD1"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3y5-a7-0CI"/>
-                                <exclude reference="MAq-hN-UHh"/>
-                                <exclude reference="VwS-JI-Zcg"/>
+                                <exclude reference="0Oh-Sd-jHL"/>
+                                <exclude reference="qeX-5t-lcL"/>
+                                <exclude reference="yeg-oq-dfn"/>
+                                <exclude reference="fxG-uL-kk3"/>
+                                <exclude reference="HUd-W4-3jg"/>
+                                <exclude reference="jvx-SK-PbH"/>
                                 <exclude reference="5Nc-K4-Aik"/>
                                 <exclude reference="jVX-u1-55N"/>
                                 <exclude reference="tR4-FQ-Uom"/>
-                                <exclude reference="fxG-uL-kk3"/>
+                                <exclude reference="3y5-a7-0CI"/>
+                                <exclude reference="MAq-hN-UHh"/>
+                                <exclude reference="VwS-JI-Zcg"/>
+                                <exclude reference="frD-Pz-0Bw"/>
+                                <exclude reference="f7H-Ta-xgt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -445,21 +454,28 @@
                                 <include reference="lQN-hf-ftW"/>
                                 <include reference="m3X-of-366"/>
                                 <include reference="2Lg-NS-anz"/>
-                                <include reference="ngX-l7-qD1"/>
                                 <include reference="LhK-Da-zFg"/>
+                                <include reference="ngX-l7-qD1"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3y5-a7-0CI"/>
-                                <include reference="MAq-hN-UHh"/>
-                                <include reference="VwS-JI-Zcg"/>
+                                <include reference="0Oh-Sd-jHL"/>
+                                <include reference="qeX-5t-lcL"/>
+                                <include reference="yeg-oq-dfn"/>
+                                <include reference="fxG-uL-kk3"/>
+                                <include reference="HUd-W4-3jg"/>
+                                <include reference="jvx-SK-PbH"/>
                                 <include reference="5Nc-K4-Aik"/>
                                 <include reference="jVX-u1-55N"/>
                                 <include reference="tR4-FQ-Uom"/>
-                                <include reference="fxG-uL-kk3"/>
+                                <include reference="3y5-a7-0CI"/>
+                                <include reference="MAq-hN-UHh"/>
+                                <include reference="VwS-JI-Zcg"/>
+                                <include reference="frD-Pz-0Bw"/>
+                                <include reference="f7H-Ta-xgt"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="dAY-XK-ChX"/>
+                    <navigationItem key="navigationItem" title="Options" id="dAY-XK-ChX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzY-U9-9hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
