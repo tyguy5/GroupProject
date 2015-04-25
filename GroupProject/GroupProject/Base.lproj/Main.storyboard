@@ -385,6 +385,30 @@
                                     <rect key="frame" x="0.0" y="20" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngX-l7-qD1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="180" y="199" width="40" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="I3A-uu-gCa" eventType="touchUpInside" id="raM-c8-ZMc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-Da-zFg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Rate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="184" y="372" width="32" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="rateButtonTapped:" destination="I3A-uu-gCa" eventType="touchUpInside" id="ALT-MU-RLC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -402,6 +426,8 @@
                                 <exclude reference="lQN-hf-ftW"/>
                                 <exclude reference="m3X-of-366"/>
                                 <exclude reference="2Lg-NS-anz"/>
+                                <exclude reference="ngX-l7-qD1"/>
+                                <exclude reference="LhK-Da-zFg"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3y5-a7-0CI"/>
@@ -419,6 +445,8 @@
                                 <include reference="lQN-hf-ftW"/>
                                 <include reference="m3X-of-366"/>
                                 <include reference="2Lg-NS-anz"/>
+                                <include reference="ngX-l7-qD1"/>
+                                <include reference="LhK-Da-zFg"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="3y5-a7-0CI"/>
