@@ -385,38 +385,16 @@
                                     <rect key="frame" x="0.0" y="20" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbt-Xb-XoX">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="About Us">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="44" y="285" width="64" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="peN-FS-91D" kind="showDetail" id="oLd-VD-1e6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lua-Ff-qXX">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Feedback">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="RcV-Bd-815" secondAttribute="trailing" constant="33" id="3y5-a7-0CI"/>
                             <constraint firstItem="lQN-hf-ftW" firstAttribute="centerY" secondItem="zGn-eh-MOH" secondAttribute="centerY" id="5Nc-K4-Aik"/>
-                            <constraint firstItem="Lua-Ff-qXX" firstAttribute="centerY" secondItem="m3X-of-366" secondAttribute="centerY" id="8ld-p3-8IJ"/>
-                            <constraint firstItem="Lua-Ff-qXX" firstAttribute="baseline" secondItem="bbt-Xb-XoX" secondAttribute="baseline" id="Hjj-Wi-HhZ"/>
                             <constraint firstItem="RcV-Bd-815" firstAttribute="baseline" secondItem="lQN-hf-ftW" secondAttribute="baseline" id="MAq-hN-UHh"/>
                             <constraint firstItem="RcV-Bd-815" firstAttribute="leading" secondItem="m3X-of-366" secondAttribute="trailing" constant="19" id="VwS-JI-Zcg"/>
                             <constraint firstItem="m3X-of-366" firstAttribute="leading" secondItem="lQN-hf-ftW" secondAttribute="trailing" constant="18" id="fxG-uL-kk3"/>
                             <constraint firstItem="lQN-hf-ftW" firstAttribute="leading" secondItem="zGn-eh-MOH" secondAttribute="leadingMargin" constant="38" id="jVX-u1-55N"/>
-                            <constraint firstItem="Lua-Ff-qXX" firstAttribute="leading" secondItem="m3X-of-366" secondAttribute="trailing" constant="28" id="qJU-Hy-xJS"/>
                             <constraint firstItem="lQN-hf-ftW" firstAttribute="centerY" secondItem="m3X-of-366" secondAttribute="centerY" id="tR4-FQ-Uom"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Lua-Ff-qXX" secondAttribute="trailing" constant="24" id="xQO-vd-Uuz"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -424,14 +402,8 @@
                                 <exclude reference="lQN-hf-ftW"/>
                                 <exclude reference="m3X-of-366"/>
                                 <exclude reference="2Lg-NS-anz"/>
-                                <exclude reference="bbt-Xb-XoX"/>
-                                <exclude reference="Lua-Ff-qXX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8ld-p3-8IJ"/>
-                                <exclude reference="Hjj-Wi-HhZ"/>
-                                <exclude reference="qJU-Hy-xJS"/>
-                                <exclude reference="xQO-vd-Uuz"/>
                                 <exclude reference="3y5-a7-0CI"/>
                                 <exclude reference="MAq-hN-UHh"/>
                                 <exclude reference="VwS-JI-Zcg"/>
@@ -447,14 +419,8 @@
                                 <include reference="lQN-hf-ftW"/>
                                 <include reference="m3X-of-366"/>
                                 <include reference="2Lg-NS-anz"/>
-                                <include reference="bbt-Xb-XoX"/>
-                                <include reference="Lua-Ff-qXX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8ld-p3-8IJ"/>
-                                <include reference="Hjj-Wi-HhZ"/>
-                                <include reference="qJU-Hy-xJS"/>
-                                <include reference="xQO-vd-Uuz"/>
                                 <include reference="3y5-a7-0CI"/>
                                 <include reference="MAq-hN-UHh"/>
                                 <include reference="VwS-JI-Zcg"/>
