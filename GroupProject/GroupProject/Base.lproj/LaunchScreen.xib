@@ -51,10 +51,10 @@
                     <exclude reference="VFR-an-8BN"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="wi7-nA-Fds"/>
                     <exclude reference="Fnu-q8-fhJ"/>
                     <exclude reference="L1d-of-7Ub"/>
                     <exclude reference="WjX-Wd-JbD"/>
-                    <exclude reference="wi7-nA-Fds"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -63,10 +63,10 @@
                     <include reference="VFR-an-8BN"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="wi7-nA-Fds"/>
                     <include reference="Fnu-q8-fhJ"/>
                     <include reference="L1d-of-7Ub"/>
                     <include reference="WjX-Wd-JbD"/>
-                    <include reference="wi7-nA-Fds"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>
