@@ -1129,11 +1129,11 @@
             </objects>
             <point key="canvasLocation" x="2982" y="1485"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--List-->
         <scene sceneID="0aS-FP-TXx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aZl-OK-yTa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="About Alan" id="5GJ-7o-Qne"/>
+                    <tabBarItem key="tabBarItem" title="List" image="List" selectedImage="About Alan" id="5GJ-7o-Qne"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jvc-rV-nU6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1157,6 +1157,7 @@
         <image name="Add" width="13" height="13"/>
         <image name="AddView" width="170" height="170"/>
         <image name="GetStarted" width="170" height="170"/>
+        <image name="List" width="13" height="13"/>
         <image name="Onboard1" width="170" height="170"/>
         <image name="Onboard2" width="170" height="170"/>
         <image name="Onboard3" width="170" height="170"/>
@@ -1167,7 +1168,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7R6-m4-zPo"/>
-        <segue reference="lBJ-zL-evD"/>
+        <segue reference="Taz-i0-atf"/>
         <segue reference="rmT-e9-KuY"/>
     </inferredMetricsTieBreakers>
 </document>
