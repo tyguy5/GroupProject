@@ -15,6 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ChU-7s-Wdu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wld-KT-lA9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap this tab to add an item to your to-do list" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-Ub-Fbi">
@@ -131,22 +132,22 @@
                                 <exclude reference="0a5-a5-aYx"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="3k6-VK-lqn"/>
+                                <exclude reference="fAl-Au-KdZ"/>
+                                <exclude reference="rnz-B6-qBT"/>
+                                <exclude reference="3wJ-Jy-sVL"/>
+                                <exclude reference="zQh-aM-oNV"/>
                                 <exclude reference="GBi-2V-1qT"/>
                                 <exclude reference="WuA-CA-rZD"/>
                                 <exclude reference="Xzh-B1-b5Y"/>
                                 <exclude reference="0Kp-Rf-6hh"/>
                                 <exclude reference="MiT-XZ-uKH"/>
                                 <exclude reference="nXP-HI-27V"/>
-                                <exclude reference="3wJ-Jy-sVL"/>
-                                <exclude reference="zQh-aM-oNV"/>
                                 <exclude reference="36j-cj-Mrb"/>
                                 <exclude reference="7KS-3s-KlS"/>
                                 <exclude reference="78n-1l-hCc"/>
                                 <exclude reference="hBW-RP-DBR"/>
                                 <exclude reference="m02-dY-zDD"/>
-                                <exclude reference="3k6-VK-lqn"/>
-                                <exclude reference="fAl-Au-KdZ"/>
-                                <exclude reference="rnz-B6-qBT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -158,22 +159,22 @@
                                 <include reference="0a5-a5-aYx"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="3k6-VK-lqn"/>
+                                <include reference="fAl-Au-KdZ"/>
+                                <include reference="rnz-B6-qBT"/>
+                                <include reference="3wJ-Jy-sVL"/>
+                                <include reference="zQh-aM-oNV"/>
                                 <include reference="GBi-2V-1qT"/>
                                 <include reference="WuA-CA-rZD"/>
                                 <include reference="Xzh-B1-b5Y"/>
                                 <include reference="0Kp-Rf-6hh"/>
                                 <include reference="MiT-XZ-uKH"/>
                                 <include reference="nXP-HI-27V"/>
-                                <include reference="3wJ-Jy-sVL"/>
-                                <include reference="zQh-aM-oNV"/>
                                 <include reference="36j-cj-Mrb"/>
                                 <include reference="7KS-3s-KlS"/>
                                 <include reference="78n-1l-hCc"/>
                                 <include reference="hBW-RP-DBR"/>
                                 <include reference="m02-dY-zDD"/>
-                                <include reference="3k6-VK-lqn"/>
-                                <include reference="fAl-Au-KdZ"/>
-                                <include reference="rnz-B6-qBT"/>
                             </mask>
                         </variation>
                     </view>
