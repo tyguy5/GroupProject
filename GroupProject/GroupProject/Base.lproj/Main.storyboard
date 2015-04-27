@@ -728,7 +728,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="WXN-4Q-sp0" kind="showDetail" id="LhK-pN-jQ5"/>
+                                    <segue destination="WXN-4Q-sp0" kind="show" id="LhK-pN-jQ5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-qm-m4g">
@@ -750,7 +750,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="oXA-Cd-Fn8" kind="showDetail" id="CGo-FY-Mjf"/>
+                                    <segue destination="oXA-Cd-Fn8" kind="show" id="CGo-FY-Mjf"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cE-dt-62L">
