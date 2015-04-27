@@ -848,13 +848,18 @@
         <!--Tab Bar Controller-->
         <scene sceneID="csZ-xp-WaE">
             <objects>
-                <tabBarController id="oEf-HH-qQ7" sceneMemberID="viewController">
+                <tabBarController id="oEf-HH-qQ7" customClass="TabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YMI-th-ei6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="UU4-MB-xfO" kind="relationship" relationship="viewControllers" id="Zab-Kn-Rbm"/>
                         <segue destination="aZl-OK-yTa" kind="relationship" relationship="viewControllers" id="aFe-Ba-VXN"/>
@@ -1030,25 +1035,25 @@
                                 <exclude reference="H5a-CK-cZT"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="MPT-eV-vK5"/>
-                                <exclude reference="yZD-S2-E9W"/>
+                                <exclude reference="GDs-RT-Wil"/>
+                                <exclude reference="VVb-h0-VP8"/>
                                 <exclude reference="8te-G6-Omm"/>
                                 <exclude reference="Xkx-lZ-dYV"/>
+                                <exclude reference="yNa-tp-PRg"/>
+                                <exclude reference="SfQ-0k-aJe"/>
+                                <exclude reference="Z5r-Pf-Dnj"/>
+                                <exclude reference="gpR-DD-a4W"/>
                                 <exclude reference="EoO-nR-F5z"/>
                                 <exclude reference="quA-9Q-Q19"/>
                                 <exclude reference="rne-su-pjk"/>
-                                <exclude reference="gpR-DD-a4W"/>
                                 <exclude reference="64C-6A-DUw"/>
                                 <exclude reference="BMb-MX-l1E"/>
                                 <exclude reference="Odt-nD-Qve"/>
                                 <exclude reference="qie-Qp-Ugm"/>
-                                <exclude reference="SfQ-0k-aJe"/>
-                                <exclude reference="Z5r-Pf-Dnj"/>
+                                <exclude reference="MPT-eV-vK5"/>
+                                <exclude reference="yZD-S2-E9W"/>
                                 <exclude reference="2CR-DP-emm"/>
                                 <exclude reference="hcW-gi-BFy"/>
-                                <exclude reference="GDs-RT-Wil"/>
-                                <exclude reference="VVb-h0-VP8"/>
-                                <exclude reference="yNa-tp-PRg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1063,25 +1068,25 @@
                                 <include reference="H5a-CK-cZT"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="MPT-eV-vK5"/>
-                                <include reference="yZD-S2-E9W"/>
+                                <include reference="GDs-RT-Wil"/>
+                                <include reference="VVb-h0-VP8"/>
                                 <include reference="8te-G6-Omm"/>
                                 <include reference="Xkx-lZ-dYV"/>
+                                <include reference="yNa-tp-PRg"/>
+                                <include reference="SfQ-0k-aJe"/>
+                                <include reference="Z5r-Pf-Dnj"/>
+                                <include reference="gpR-DD-a4W"/>
                                 <include reference="EoO-nR-F5z"/>
                                 <include reference="quA-9Q-Q19"/>
                                 <include reference="rne-su-pjk"/>
-                                <include reference="gpR-DD-a4W"/>
                                 <include reference="64C-6A-DUw"/>
                                 <include reference="BMb-MX-l1E"/>
                                 <include reference="Odt-nD-Qve"/>
                                 <include reference="qie-Qp-Ugm"/>
-                                <include reference="SfQ-0k-aJe"/>
-                                <include reference="Z5r-Pf-Dnj"/>
+                                <include reference="MPT-eV-vK5"/>
+                                <include reference="yZD-S2-E9W"/>
                                 <include reference="2CR-DP-emm"/>
                                 <include reference="hcW-gi-BFy"/>
-                                <include reference="GDs-RT-Wil"/>
-                                <include reference="VVb-h0-VP8"/>
-                                <include reference="yNa-tp-PRg"/>
                             </mask>
                         </variation>
                     </view>
@@ -1133,7 +1138,7 @@
         <scene sceneID="0aS-FP-TXx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aZl-OK-yTa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" image="List" selectedImage="About Alan" id="5GJ-7o-Qne"/>
+                    <tabBarItem key="tabBarItem" title="List" image="List" id="5GJ-7o-Qne"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jvc-rV-nU6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
