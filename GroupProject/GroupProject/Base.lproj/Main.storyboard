@@ -228,7 +228,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZX4-5T-Clv" kind="showDetail" id="rmT-e9-KuY"/>
+                                    <segue destination="ZX4-5T-Clv" kind="show" id="rmT-e9-KuY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-aU-EuC">
@@ -244,7 +244,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="ZX4-5T-Clv" kind="showDetail" id="xzd-VR-Ho3"/>
+                                    <segue destination="ZX4-5T-Clv" kind="show" id="xzd-VR-Ho3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try Swiping" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3h-OW-CFx">
@@ -379,7 +379,7 @@
                                     <navigationItem title="Options" id="UGa-FH-A1n">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="bzd-Lu-Xm5">
                                             <connections>
-                                                <segue destination="oEf-HH-qQ7" kind="showDetail" id="7R6-m4-zPo"/>
+                                                <segue destination="oEf-HH-qQ7" kind="show" id="7R6-m4-zPo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -484,7 +484,7 @@
             </objects>
             <point key="canvasLocation" x="3864" y="1485"/>
         </scene>
-        <!--Where View Controller-->
+        <!--Where-->
         <scene sceneID="OH9-5z-6Qt">
             <objects>
                 <viewController storyboardIdentifier="WhereViewController" id="WXN-4Q-sp0" customClass="WhereViewController" sceneMemberID="viewController">
@@ -570,7 +570,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="jZk-P9-Ob7"/>
+                    <navigationItem key="navigationItem" title="Where" id="jZk-P9-Ob7"/>
                     <connections>
                         <segue destination="Pbb-IL-TZR" kind="showDetail" id="bQx-1s-c1G"/>
                     </connections>
@@ -579,7 +579,7 @@
             </objects>
             <point key="canvasLocation" x="5121" y="-930"/>
         </scene>
-        <!--When View Controller-->
+        <!--When-->
         <scene sceneID="eio-Rp-Jsj">
             <objects>
                 <viewController storyboardIdentifier="WhenViewController" id="oXA-Cd-Fn8" customClass="WhenViewController" sceneMemberID="viewController">
@@ -628,7 +628,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Pbb-IL-TZR" kind="showDetail" id="lBJ-zL-evD"/>
+                                    <segue destination="Pbb-IL-TZR" kind="push" id="lBJ-zL-evD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -691,7 +691,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="xzX-qT-ugJ"/>
+                    <navigationItem key="navigationItem" title="When" id="xzX-qT-ugJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -995,18 +995,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tP6-33-5dP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="About Us" id="hac-ft-dJQ">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="sZB-9G-bMa">
-                                            <connections>
-                                                <segue destination="I3A-uu-gCa" kind="showDetail" id="p8X-Vk-eYe"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1016,22 +1004,19 @@
                             <constraint firstItem="oa3-pA-E5F" firstAttribute="top" secondItem="hWy-D9-E2Q" secondAttribute="bottom" constant="8" symbolic="YES" id="BMb-MX-l1E"/>
                             <constraint firstItem="hWy-D9-E2Q" firstAttribute="top" secondItem="u78-iU-rI5" secondAttribute="bottom" constant="8" symbolic="YES" id="EoO-nR-F5z"/>
                             <constraint firstItem="H5a-CK-cZT" firstAttribute="top" secondItem="ksr-dw-UHe" secondAttribute="bottom" constant="59" id="GDs-RT-Wil"/>
-                            <constraint firstAttribute="trailing" secondItem="tP6-33-5dP" secondAttribute="trailing" id="J8x-W7-FyV"/>
                             <constraint firstItem="u78-iU-rI5" firstAttribute="leading" secondItem="hWy-D9-E2Q" secondAttribute="leading" id="MPT-eV-vK5"/>
-                            <constraint firstItem="tP6-33-5dP" firstAttribute="top" secondItem="GqO-r8-tzJ" secondAttribute="bottom" id="OSZ-q8-Ipz"/>
                             <constraint firstItem="oa3-pA-E5F" firstAttribute="trailing" secondItem="uY7-Ti-Pzo" secondAttribute="trailing" id="Odt-nD-Qve"/>
                             <constraint firstItem="ksr-dw-UHe" firstAttribute="top" secondItem="u17-in-G4P" secondAttribute="bottom" constant="59" id="SfQ-0k-aJe"/>
                             <constraint firstItem="H5a-CK-cZT" firstAttribute="leading" secondItem="ksr-dw-UHe" secondAttribute="leading" id="VVb-h0-VP8"/>
-                            <constraint firstItem="u78-iU-rI5" firstAttribute="top" secondItem="tP6-33-5dP" secondAttribute="bottom" constant="80" id="VZh-9E-S0J"/>
                             <constraint firstItem="ImF-Sb-vfX" firstAttribute="leading" secondItem="u78-iU-rI5" secondAttribute="trailing" constant="8" symbolic="YES" id="Xkx-lZ-dYV"/>
                             <constraint firstItem="ksr-dw-UHe" firstAttribute="leading" secondItem="u17-in-G4P" secondAttribute="leading" id="Z5r-Pf-Dnj"/>
-                            <constraint firstItem="tP6-33-5dP" firstAttribute="leading" secondItem="3A7-QT-biF" secondAttribute="leading" id="aPU-Qa-W6Q"/>
                             <constraint firstItem="u17-in-G4P" firstAttribute="top" secondItem="ImF-Sb-vfX" secondAttribute="bottom" constant="59" id="gpR-DD-a4W"/>
                             <constraint firstItem="uY7-Ti-Pzo" firstAttribute="leading" secondItem="oa3-pA-E5F" secondAttribute="leading" id="hcW-gi-BFy"/>
                             <constraint firstItem="oa3-pA-E5F" firstAttribute="leading" secondItem="hWy-D9-E2Q" secondAttribute="leading" id="qie-Qp-Ugm"/>
                             <constraint firstItem="hWy-D9-E2Q" firstAttribute="leading" secondItem="3A7-QT-biF" secondAttribute="leadingMargin" id="quA-9Q-Q19"/>
                             <constraint firstItem="hWy-D9-E2Q" firstAttribute="trailing" secondItem="u78-iU-rI5" secondAttribute="trailing" id="rne-su-pjk"/>
                             <constraint firstItem="TOf-CZ-76W" firstAttribute="top" secondItem="H5a-CK-cZT" secondAttribute="bottom" constant="170" id="yNa-tp-PRg"/>
+                            <constraint firstItem="u78-iU-rI5" firstAttribute="top" secondItem="GqO-r8-tzJ" secondAttribute="bottom" constant="124" id="yZD-S2-E9W"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -1043,31 +1028,27 @@
                                 <exclude reference="u17-in-G4P"/>
                                 <exclude reference="ksr-dw-UHe"/>
                                 <exclude reference="H5a-CK-cZT"/>
-                                <exclude reference="tP6-33-5dP"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GDs-RT-Wil"/>
-                                <exclude reference="VVb-h0-VP8"/>
+                                <exclude reference="MPT-eV-vK5"/>
+                                <exclude reference="yZD-S2-E9W"/>
                                 <exclude reference="8te-G6-Omm"/>
                                 <exclude reference="Xkx-lZ-dYV"/>
-                                <exclude reference="yNa-tp-PRg"/>
-                                <exclude reference="SfQ-0k-aJe"/>
-                                <exclude reference="Z5r-Pf-Dnj"/>
-                                <exclude reference="gpR-DD-a4W"/>
-                                <exclude reference="J8x-W7-FyV"/>
-                                <exclude reference="OSZ-q8-Ipz"/>
-                                <exclude reference="aPU-Qa-W6Q"/>
                                 <exclude reference="EoO-nR-F5z"/>
                                 <exclude reference="quA-9Q-Q19"/>
                                 <exclude reference="rne-su-pjk"/>
+                                <exclude reference="gpR-DD-a4W"/>
                                 <exclude reference="64C-6A-DUw"/>
                                 <exclude reference="BMb-MX-l1E"/>
                                 <exclude reference="Odt-nD-Qve"/>
                                 <exclude reference="qie-Qp-Ugm"/>
-                                <exclude reference="MPT-eV-vK5"/>
-                                <exclude reference="VZh-9E-S0J"/>
+                                <exclude reference="SfQ-0k-aJe"/>
+                                <exclude reference="Z5r-Pf-Dnj"/>
                                 <exclude reference="2CR-DP-emm"/>
                                 <exclude reference="hcW-gi-BFy"/>
+                                <exclude reference="GDs-RT-Wil"/>
+                                <exclude reference="VVb-h0-VP8"/>
+                                <exclude reference="yNa-tp-PRg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1080,31 +1061,27 @@
                                 <include reference="u17-in-G4P"/>
                                 <include reference="ksr-dw-UHe"/>
                                 <include reference="H5a-CK-cZT"/>
-                                <include reference="tP6-33-5dP"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GDs-RT-Wil"/>
-                                <include reference="VVb-h0-VP8"/>
+                                <include reference="MPT-eV-vK5"/>
+                                <include reference="yZD-S2-E9W"/>
                                 <include reference="8te-G6-Omm"/>
                                 <include reference="Xkx-lZ-dYV"/>
-                                <include reference="yNa-tp-PRg"/>
-                                <include reference="SfQ-0k-aJe"/>
-                                <include reference="Z5r-Pf-Dnj"/>
-                                <include reference="gpR-DD-a4W"/>
-                                <include reference="J8x-W7-FyV"/>
-                                <include reference="OSZ-q8-Ipz"/>
-                                <include reference="aPU-Qa-W6Q"/>
                                 <include reference="EoO-nR-F5z"/>
                                 <include reference="quA-9Q-Q19"/>
                                 <include reference="rne-su-pjk"/>
+                                <include reference="gpR-DD-a4W"/>
                                 <include reference="64C-6A-DUw"/>
                                 <include reference="BMb-MX-l1E"/>
                                 <include reference="Odt-nD-Qve"/>
                                 <include reference="qie-Qp-Ugm"/>
-                                <include reference="MPT-eV-vK5"/>
-                                <include reference="VZh-9E-S0J"/>
+                                <include reference="SfQ-0k-aJe"/>
+                                <include reference="Z5r-Pf-Dnj"/>
                                 <include reference="2CR-DP-emm"/>
                                 <include reference="hcW-gi-BFy"/>
+                                <include reference="GDs-RT-Wil"/>
+                                <include reference="VVb-h0-VP8"/>
+                                <include reference="yNa-tp-PRg"/>
                             </mask>
                         </variation>
                     </view>
@@ -1190,8 +1167,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7R6-m4-zPo"/>
-        <segue reference="p8X-Vk-eYe"/>
-        <segue reference="Taz-i0-atf"/>
-        <segue reference="xzd-VR-Ho3"/>
+        <segue reference="lBJ-zL-evD"/>
+        <segue reference="rmT-e9-KuY"/>
     </inferredMetricsTieBreakers>
 </document>
