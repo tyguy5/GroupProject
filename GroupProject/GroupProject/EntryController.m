@@ -9,7 +9,7 @@
 #import "EntryController.h"
 #import "Stack.h"
 
-@implementation EntryController
+@implementation EntryController 
 
 + (EntryController *) sharedInstance {
     static EntryController *sharedInstance = nil;
