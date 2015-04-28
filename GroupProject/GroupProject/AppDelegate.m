@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AppearanceController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [AppearanceController initializeAppearanceDefaults];
+    
     return YES;
 }
 
