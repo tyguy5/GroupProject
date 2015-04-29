@@ -623,17 +623,18 @@
                                     <segue destination="Pbb-IL-TZR" kind="show" id="lBJ-zL-evD"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqa-Rv-03T">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-kr-UGv">
                                 <rect key="frame" x="-160" y="-81" width="320" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="451601285.95006001">
                                     <!--2015-04-24 20:48:05 +0000-->
                                 </date>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mF-Kj-1Lb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -644,18 +645,23 @@
                                 <variation key="widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstAttribute="bottom" secondItem="m8k-Vj-ibE" secondAttribute="bottom" constant="20" symbolic="YES" id="9Tu-HS-l8A"/>
-                            <constraint firstItem="2bo-kr-UGv" firstAttribute="top" secondItem="dqa-Rv-03T" secondAttribute="bottom" constant="25" id="A0I-oW-50g"/>
                             <constraint firstItem="l0c-Db-dER" firstAttribute="centerX" secondItem="2H0-QY-06d" secondAttribute="centerX" id="F0t-2E-t6O"/>
-                            <constraint firstItem="dqa-Rv-03T" firstAttribute="centerX" secondItem="2bo-kr-UGv" secondAttribute="centerX" id="FC2-cX-5sk"/>
+                            <constraint firstItem="0mF-Kj-1Lb" firstAttribute="top" secondItem="l0c-Db-dER" secondAttribute="bottom" constant="40" id="Jtz-ta-aUG">
+                                <variation key="widthClass=compact" constant="80"/>
+                            </constraint>
                             <constraint firstItem="l0c-Db-dER" firstAttribute="centerX" secondItem="2bo-kr-UGv" secondAttribute="centerX" id="VFx-PQ-W4q"/>
+                            <constraint firstItem="0mF-Kj-1Lb" firstAttribute="centerX" secondItem="l0c-Db-dER" secondAttribute="centerX" id="Vgj-X5-Ea1"/>
+                            <constraint firstItem="2bo-kr-UGv" firstAttribute="top" secondItem="0mF-Kj-1Lb" secondAttribute="bottom" constant="79" id="asR-rb-HDd">
+                                <variation key="widthClass=compact" constant="39"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="2bo-kr-UGv" secondAttribute="trailing" id="bnX-Ts-kIN"/>
                             <constraint firstItem="2bo-kr-UGv" firstAttribute="top" secondItem="l0c-Db-dER" secondAttribute="bottom" constant="41" id="caW-eW-ICA">
                                 <variation key="widthClass=compact" constant="140"/>
                             </constraint>
+                            <constraint firstItem="0mF-Kj-1Lb" firstAttribute="trailing" secondItem="m8k-Vj-ibE" secondAttribute="trailing" id="dWb-pZ-v7D"/>
                             <constraint firstItem="2H0-QY-06d" firstAttribute="top" secondItem="xp5-VL-yY3" secondAttribute="bottom" constant="8" symbolic="YES" id="f5a-3C-4bO">
                                 <variation key="widthClass=compact" constant="28"/>
                             </constraint>
-                            <constraint firstItem="dqa-Rv-03T" firstAttribute="trailing" secondItem="m8k-Vj-ibE" secondAttribute="trailing" id="kJ7-xH-gsp"/>
                             <constraint firstItem="2bo-kr-UGv" firstAttribute="leading" secondItem="0SU-p0-RbH" secondAttribute="leading" id="vAI-Bu-OPh"/>
                         </constraints>
                         <variation key="default">
@@ -663,17 +669,18 @@
                                 <exclude reference="2H0-QY-06d"/>
                                 <exclude reference="l0c-Db-dER"/>
                                 <exclude reference="m8k-Vj-ibE"/>
-                                <exclude reference="dqa-Rv-03T"/>
                                 <exclude reference="2bo-kr-UGv"/>
+                                <exclude reference="0mF-Kj-1Lb"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="f5a-3C-4bO"/>
                                 <exclude reference="8gz-ks-US6"/>
                                 <exclude reference="F0t-2E-t6O"/>
                                 <exclude reference="VFx-PQ-W4q"/>
-                                <exclude reference="FC2-cX-5sk"/>
-                                <exclude reference="kJ7-xH-gsp"/>
-                                <exclude reference="A0I-oW-50g"/>
+                                <exclude reference="Jtz-ta-aUG"/>
+                                <exclude reference="Vgj-X5-Ea1"/>
+                                <exclude reference="dWb-pZ-v7D"/>
+                                <exclude reference="asR-rb-HDd"/>
                                 <exclude reference="bnX-Ts-kIN"/>
                                 <exclude reference="caW-eW-ICA"/>
                                 <exclude reference="vAI-Bu-OPh"/>
@@ -686,17 +693,18 @@
                                 <include reference="2H0-QY-06d"/>
                                 <include reference="l0c-Db-dER"/>
                                 <include reference="m8k-Vj-ibE"/>
-                                <include reference="dqa-Rv-03T"/>
                                 <include reference="2bo-kr-UGv"/>
+                                <include reference="0mF-Kj-1Lb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="f5a-3C-4bO"/>
                                 <include reference="8gz-ks-US6"/>
                                 <include reference="F0t-2E-t6O"/>
                                 <include reference="VFx-PQ-W4q"/>
-                                <include reference="FC2-cX-5sk"/>
-                                <include reference="kJ7-xH-gsp"/>
-                                <include reference="A0I-oW-50g"/>
+                                <include reference="Jtz-ta-aUG"/>
+                                <include reference="Vgj-X5-Ea1"/>
+                                <include reference="dWb-pZ-v7D"/>
+                                <include reference="asR-rb-HDd"/>
                                 <include reference="bnX-Ts-kIN"/>
                                 <include reference="caW-eW-ICA"/>
                                 <include reference="vAI-Bu-OPh"/>
@@ -706,11 +714,15 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="When" id="xzX-qT-ugJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="FGd-Qq-eXB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="FGd-Qq-eXB">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="oXA-Cd-Fn8" id="gRb-0m-C5x"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="2bo-kr-UGv" id="xMH-EL-MTt"/>
-                        <outlet property="dateSelctionText" destination="dqa-Rv-03T" id="eAi-mk-6I2"/>
+                        <outlet property="dateSelectionText" destination="0mF-Kj-1Lb" id="55B-gA-GRv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Entry.h"
 
-@interface WhenViewController : UIViewController
+@interface WhenViewController : UIViewController <UIPickerViewDelegate>
+
+@property (nonatomic, strong) Entry *entry;
+
 
 @end

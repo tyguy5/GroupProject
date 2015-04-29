@@ -7,10 +7,12 @@
 //
 
 #import "WhenViewController.h"
+#import "EntryController.h"
 
 @interface WhenViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property (weak, nonatomic) IBOutlet UITextField *dateSelctionText;
+@property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
+
 
 @end
 
@@ -20,10 +22,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    datePicker.datePickerMode = [
+    self.dateSelectionText.text = @"";
+    
+    
+    self.datePicker.datePickerMode = UIDatePickerModeDate;
     
 }
 
+- (IBAction)saveButtonTapped:(id)sender {
+    
+    [self showSelectedDate];
+    
+    self.entry.timestamp = [NSDate date];
+    
+    [[EntryController sharedInstance] save];
 
+}
+
+
+- (void)showSelectedDate {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd MMM YYYY"];
+    
+    
+    self.dateSelectionText.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:self.datePicker.date]];
+}
 
 @end
