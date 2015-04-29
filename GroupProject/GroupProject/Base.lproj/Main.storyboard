@@ -698,7 +698,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="When" id="xzX-qT-ugJ"/>
+                    <navigationItem key="navigationItem" title="When" id="xzX-qT-ugJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="FGd-Qq-eXB"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
