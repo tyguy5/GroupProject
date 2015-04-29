@@ -575,7 +575,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmu-Nt-hC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5121" y="-930"/>
+            <point key="canvasLocation" x="5547" y="-1158"/>
         </scene>
         <!--When-->
         <scene sceneID="eio-Rp-Jsj">
@@ -619,9 +619,6 @@
                                 <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Pbb-IL-TZR" kind="show" id="lBJ-zL-evD"/>
-                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-kr-UGv">
                                 <rect key="frame" x="-160" y="-81" width="320" height="162"/>
@@ -717,6 +714,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="FGd-Qq-eXB">
                             <connections>
                                 <action selector="saveButtonTapped:" destination="oXA-Cd-Fn8" id="gRb-0m-C5x"/>
+                                <segue destination="Pbb-IL-TZR" kind="show" id="EWr-os-S4s"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -727,7 +725,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6957" y="-144"/>
+            <point key="canvasLocation" x="5724" y="-346"/>
         </scene>
         <!--Add Entry-->
         <scene sceneID="uRH-ae-eFx">
@@ -1161,8 +1159,8 @@
         <image name="popover" width="73" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i7b-Ox-V63"/>
         <segue reference="uUi-sv-gxh"/>
-        <segue reference="lBJ-zL-evD"/>
+        <segue reference="i7b-Ox-V63"/>
+        <segue reference="EWr-os-S4s"/>
     </inferredMetricsTieBreakers>
 </document>
