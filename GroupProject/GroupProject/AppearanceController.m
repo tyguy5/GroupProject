@@ -24,9 +24,13 @@
     
     [[UINavigationBar appearance] setBackgroundColor:[UIColor brownColor]];
     
-    [[UITabBar appearance] setBackgroundColor:[UIColor brownColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor brownColor]];
     
-    [[UITabBar appearance] setTintColor:[UIColor brownColor]];
+    [[UITabBar appearance] setBarTintColor:[UIColor brownColor]];
+    
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
 }
 
 
