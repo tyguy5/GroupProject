@@ -19,6 +19,7 @@
 		2F536EB61AE9EB7A00D7E696 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F536EB41AE9EB7A00D7E696 /* LaunchScreen.xib */; };
 		2F536EC21AE9EB7A00D7E696 /* GroupProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F536EC11AE9EB7A00D7E696 /* GroupProjectTests.m */; };
 		CFC1F33A1AEFFAA800B1EABA /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F3391AEFFAA800B1EABA /* AppearanceController.m */; };
+		CFC1F33E1AF085A900B1EABA /* WhenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F33D1AF085A900B1EABA /* WhenViewController.m */; };
 		CFDF3CE21AEDED3E0013FE4C /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE11AEDED3E0013FE4C /* TabBarController.m */; };
 		CFDF3CE51AEDF7DE0013FE4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE41AEDF7DE0013FE4C /* LoginViewController.m */; };
 		CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE71AEDF7F00013FE4C /* WelcomeViewController.m */; };
@@ -58,6 +59,8 @@
 		2F536EC11AE9EB7A00D7E696 /* GroupProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupProjectTests.m; sourceTree = "<group>"; };
 		CFC1F3381AEFFAA800B1EABA /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceController.h; sourceTree = "<group>"; };
 		CFC1F3391AEFFAA800B1EABA /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceController.m; sourceTree = "<group>"; };
+		CFC1F33C1AF085A900B1EABA /* WhenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhenViewController.h; sourceTree = "<group>"; };
+		CFC1F33D1AF085A900B1EABA /* WhenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhenViewController.m; sourceTree = "<group>"; };
 		CFDF3CE01AEDED3E0013FE4C /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		CFDF3CE11AEDED3E0013FE4C /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		CFDF3CE31AEDF7DE0013FE4C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				2CFAE0C11AEC19CC00920265 /* EntryController.m */,
 				CFDF3CE91AEDFCA20013FE4C /* AddViewController.h */,
 				CFDF3CEA1AEDFCA20013FE4C /* AddViewController.m */,
+				CFC1F33C1AF085A900B1EABA /* WhenViewController.h */,
+				CFC1F33D1AF085A900B1EABA /* WhenViewController.m */,
 			);
 			name = Add;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				2CFAE0C21AEC19CC00920265 /* EntryController.m in Sources */,
 				CFDF3CE51AEDF7DE0013FE4C /* LoginViewController.m in Sources */,
 				CFDF3CE21AEDED3E0013FE4C /* TabBarController.m in Sources */,
+				CFC1F33E1AF085A900B1EABA /* WhenViewController.m in Sources */,
 				CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */,
 				2CFAE0BF1AEC199F00920265 /* Entry.m in Sources */,
 				2F536EA21AE9EB7A00D7E696 /* main.m in Sources */,
