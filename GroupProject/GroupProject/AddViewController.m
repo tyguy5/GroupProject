@@ -8,7 +8,10 @@
 
 #import "AddViewController.h"
 
-@interface AddViewController ()
+@interface AddViewController () <UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextField *titleTextField;
+
 
 @end
 
@@ -22,6 +25,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 /*
