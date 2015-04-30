@@ -817,6 +817,12 @@
                                     <outlet property="delegate" destination="uRP-AS-2KS" id="j2m-dX-o8b"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your To-do item:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kId-Pt-dMA">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label="Add"/>
@@ -826,15 +832,21 @@
                             <constraint firstItem="DvB-08-Kx7" firstAttribute="top" secondItem="sXh-8g-MFA" secondAttribute="bottom" constant="8" symbolic="YES" id="6Fb-y5-2UC">
                                 <variation key="widthClass=compact" constant="3"/>
                             </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="kId-Pt-dMA" secondAttribute="trailing" constant="96" id="Doh-fX-5Ut"/>
                             <constraint firstItem="sXh-8g-MFA" firstAttribute="leading" secondItem="zYe-JR-T9i" secondAttribute="leadingMargin" id="EIP-iw-zlk"/>
                             <constraint firstItem="wiQ-gx-Opp" firstAttribute="leading" secondItem="sXh-8g-MFA" secondAttribute="leading" id="GPe-9e-siI"/>
                             <constraint firstItem="hfs-ia-sjN" firstAttribute="top" secondItem="nzt-qm-m4g" secondAttribute="bottom" constant="3" id="GgW-hR-cQ7"/>
                             <constraint firstItem="sXh-8g-MFA" firstAttribute="bottom" secondItem="nzt-qm-m4g" secondAttribute="bottom" id="UNN-im-Pdg"/>
                             <constraint firstItem="DIF-2I-bGu" firstAttribute="centerX" secondItem="zYe-JR-T9i" secondAttribute="centerX" id="Uva-l6-y0a"/>
                             <constraint firstItem="sXh-8g-MFA" firstAttribute="top" secondItem="nzt-qm-m4g" secondAttribute="top" id="VNL-8r-Ni5"/>
-                            <constraint firstItem="sXh-8g-MFA" firstAttribute="top" secondItem="wiQ-gx-Opp" secondAttribute="bottom" constant="31" id="cab-h2-7XI"/>
+                            <constraint firstItem="wiQ-gx-Opp" firstAttribute="top" secondItem="kId-Pt-dMA" secondAttribute="bottom" constant="21" id="bU7-QP-5Dq"/>
+                            <constraint firstItem="sXh-8g-MFA" firstAttribute="top" secondItem="wiQ-gx-Opp" secondAttribute="bottom" constant="31" id="cab-h2-7XI">
+                                <variation key="widthClass=compact" constant="110"/>
+                            </constraint>
                             <constraint firstItem="nzt-qm-m4g" firstAttribute="centerX" secondItem="hfs-ia-sjN" secondAttribute="centerX" id="dzY-bb-uVc"/>
-                            <constraint firstItem="sXh-8g-MFA" firstAttribute="top" secondItem="DIF-2I-bGu" secondAttribute="bottom" constant="97" id="e3l-qi-Cw0"/>
+                            <constraint firstItem="sXh-8g-MFA" firstAttribute="top" secondItem="DIF-2I-bGu" secondAttribute="bottom" constant="97" id="e3l-qi-Cw0">
+                                <variation key="widthClass=compact" constant="52"/>
+                            </constraint>
                             <constraint firstItem="sXh-8g-MFA" firstAttribute="centerX" secondItem="DvB-08-Kx7" secondAttribute="centerX" id="eAh-i9-wNA"/>
                             <constraint firstItem="nzt-qm-m4g" firstAttribute="trailing" secondItem="zYe-JR-T9i" secondAttribute="trailingMargin" id="lpA-ri-dIA"/>
                         </constraints>
@@ -846,11 +858,14 @@
                                 <exclude reference="DIF-2I-bGu"/>
                                 <exclude reference="DvB-08-Kx7"/>
                                 <exclude reference="wiQ-gx-Opp"/>
+                                <exclude reference="kId-Pt-dMA"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Uva-l6-y0a"/>
                                 <exclude reference="1gZ-Sa-UYf"/>
                                 <exclude reference="GPe-9e-siI"/>
+                                <exclude reference="bU7-QP-5Dq"/>
+                                <exclude reference="Doh-fX-5Ut"/>
+                                <exclude reference="Uva-l6-y0a"/>
                                 <exclude reference="0zl-9G-i6t"/>
                                 <exclude reference="EIP-iw-zlk"/>
                                 <exclude reference="UNN-im-Pdg"/>
@@ -872,11 +887,14 @@
                                 <include reference="DIF-2I-bGu"/>
                                 <include reference="DvB-08-Kx7"/>
                                 <include reference="wiQ-gx-Opp"/>
+                                <include reference="kId-Pt-dMA"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Uva-l6-y0a"/>
                                 <include reference="1gZ-Sa-UYf"/>
                                 <include reference="GPe-9e-siI"/>
+                                <include reference="bU7-QP-5Dq"/>
+                                <include reference="Doh-fX-5Ut"/>
+                                <include reference="Uva-l6-y0a"/>
                                 <include reference="0zl-9G-i6t"/>
                                 <include reference="EIP-iw-zlk"/>
                                 <include reference="UNN-im-Pdg"/>
