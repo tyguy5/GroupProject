@@ -18,30 +18,14 @@
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-an-8BN">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="170" id="KzP-6g-Ejz"/>
-                        <constraint firstAttribute="height" constant="170" id="hdl-0K-peH"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="KzP-6g-Ejz"/>
-                            <exclude reference="hdl-0K-peH"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="KzP-6g-Ejz"/>
-                            <include reference="hdl-0K-peH"/>
-                        </mask>
-                    </variation>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="Tyu-lZ-e58" secondAttribute="centerX" id="Fnu-q8-fhJ"/>
-                <constraint firstItem="VFR-an-8BN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="L1d-of-7Ub"/>
-                <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WjX-Wd-JbD"/>
-                <constraint firstItem="Tyu-lZ-e58" firstAttribute="top" secondItem="VFR-an-8BN" secondAttribute="bottom" constant="16" id="wi7-nA-Fds"/>
+                <constraint firstItem="VFR-an-8BN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="136" id="AwE-aF-9Ju"/>
+                <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="Tyu-lZ-e58" secondAttribute="centerX" id="GUw-ZH-5AT"/>
+                <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eyU-Mk-iV2"/>
+                <constraint firstItem="Tyu-lZ-e58" firstAttribute="top" secondItem="VFR-an-8BN" secondAttribute="bottom" constant="16" id="kuM-XM-RST"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -51,10 +35,10 @@
                     <exclude reference="VFR-an-8BN"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="wi7-nA-Fds"/>
-                    <exclude reference="Fnu-q8-fhJ"/>
-                    <exclude reference="L1d-of-7Ub"/>
-                    <exclude reference="WjX-Wd-JbD"/>
+                    <exclude reference="AwE-aF-9Ju"/>
+                    <exclude reference="GUw-ZH-5AT"/>
+                    <exclude reference="eyU-Mk-iV2"/>
+                    <exclude reference="kuM-XM-RST"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -63,10 +47,10 @@
                     <include reference="VFR-an-8BN"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="wi7-nA-Fds"/>
-                    <include reference="Fnu-q8-fhJ"/>
-                    <include reference="L1d-of-7Ub"/>
-                    <include reference="WjX-Wd-JbD"/>
+                    <include reference="AwE-aF-9Ju"/>
+                    <include reference="GUw-ZH-5AT"/>
+                    <include reference="eyU-Mk-iV2"/>
+                    <include reference="kuM-XM-RST"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>
