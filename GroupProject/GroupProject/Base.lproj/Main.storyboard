@@ -1224,9 +1224,9 @@
         <image name="popover" width="73" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q7v-u7-a14"/>
-        <segue reference="bQx-1s-c1G"/>
+        <segue reference="LQn-B5-CyF"/>
         <segue reference="7R6-m4-zPo"/>
+        <segue reference="bQx-1s-c1G"/>
         <segue reference="uUi-sv-gxh"/>
     </inferredMetricsTieBreakers>
 </document>
