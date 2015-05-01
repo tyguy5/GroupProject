@@ -50,8 +50,8 @@
 - (void)showSelectedDate {
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"dd MMM YYYY"];
-    
+    [formatter setDateFormat:@"dd MMM YYYY HH:mm:ss"];
+
     
     self.dateSelectionText.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:self.datePicker.date]];
 }
