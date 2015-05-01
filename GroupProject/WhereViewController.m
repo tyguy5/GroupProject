@@ -22,6 +22,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.mapView.showsUserLocation = YES;
+    self.mapView.showsPointsOfInterest = YES;
+    
+    MKUserLocation *userLocation = self.mapView.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
+    
+    [self.mapView setRegion:region animated:YES];
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 
