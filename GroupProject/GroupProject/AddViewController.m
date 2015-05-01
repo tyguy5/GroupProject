@@ -9,7 +9,9 @@
 #import "AddViewController.h"
 
 @interface AddViewController () <UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *titleOfEntry;
+
+@property (strong, nonatomic) IBOutlet UITextField *titleTextField;
+
 
 @end
 
@@ -25,8 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
+    
     return YES;
 }
 
