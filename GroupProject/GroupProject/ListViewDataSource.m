@@ -17,7 +17,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCell"];
     
-    cell.textLabel.text = entry.titleOfEntry;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", entry.titleOfEntry, entry.timestamp];
     
     return cell;
 }
