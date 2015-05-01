@@ -528,6 +528,20 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RqD-Il-XM1">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="264" width="368" height="30"/>
+                                </variation>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="omO-8C-Thb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="307" width="368" height="143"/>
+                                </variation>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -545,6 +559,8 @@
                                 <exclude reference="k95-rI-LRg"/>
                                 <exclude reference="iOV-23-u9w"/>
                                 <exclude reference="WRL-ih-hc0"/>
+                                <exclude reference="RqD-Il-XM1"/>
+                                <exclude reference="omO-8C-Thb"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="K0Y-W3-6p1"/>
@@ -560,6 +576,8 @@
                                 <include reference="k95-rI-LRg"/>
                                 <include reference="iOV-23-u9w"/>
                                 <include reference="WRL-ih-hc0"/>
+                                <include reference="RqD-Il-XM1"/>
+                                <include reference="omO-8C-Thb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="K0Y-W3-6p1"/>
@@ -573,6 +591,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Where" id="jZk-P9-Ob7"/>
                     <connections>
+                        <outlet property="mapView" destination="omO-8C-Thb" id="m92-mv-D2f"/>
+                        <outlet property="textField" destination="RqD-Il-XM1" id="1qm-MN-dIx"/>
                         <segue destination="Pbb-IL-TZR" kind="show" identifier="segueIdentifier" id="bQx-1s-c1G"/>
                     </connections>
                 </viewController>

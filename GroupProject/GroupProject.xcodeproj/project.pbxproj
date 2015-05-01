@@ -24,6 +24,7 @@
 		CFC1F33E1AF085A900B1EABA /* WhenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F33D1AF085A900B1EABA /* WhenViewController.m */; };
 		CFC1F3411AF0958B00B1EABA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F3401AF0958B00B1EABA /* AboutViewController.m */; };
 		CFC1F4441AF42E2C00B1EABA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC1F4431AF42E2C00B1EABA /* MapKit.framework */; };
+		CFC1F4471AF42E8C00B1EABA /* WhereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F4461AF42E8C00B1EABA /* WhereViewController.m */; };
 		CFDF3CE21AEDED3E0013FE4C /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE11AEDED3E0013FE4C /* TabBarController.m */; };
 		CFDF3CE51AEDF7DE0013FE4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE41AEDF7DE0013FE4C /* LoginViewController.m */; };
 		CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE71AEDF7F00013FE4C /* WelcomeViewController.m */; };
@@ -72,6 +73,8 @@
 		CFC1F33F1AF0958B00B1EABA /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		CFC1F3401AF0958B00B1EABA /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		CFC1F4431AF42E2C00B1EABA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CFC1F4451AF42E8C00B1EABA /* WhereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhereViewController.h; path = ../WhereViewController.h; sourceTree = "<group>"; };
+		CFC1F4461AF42E8C00B1EABA /* WhereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhereViewController.m; path = ../WhereViewController.m; sourceTree = "<group>"; };
 		CFDF3CE01AEDED3E0013FE4C /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		CFDF3CE11AEDED3E0013FE4C /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		CFDF3CE31AEDF7DE0013FE4C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				CFDF3CEA1AEDFCA20013FE4C /* AddViewController.m */,
 				CFC1F33C1AF085A900B1EABA /* WhenViewController.h */,
 				CFC1F33D1AF085A900B1EABA /* WhenViewController.m */,
+				CFC1F4451AF42E8C00B1EABA /* WhereViewController.h */,
+				CFC1F4461AF42E8C00B1EABA /* WhereViewController.m */,
 			);
 			name = Add;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */,
 				CF7A346E1AF2CB0200F22F10 /* ListViewController.m in Sources */,
 				2CFAE0BF1AEC199F00920265 /* Entry.m in Sources */,
+				CFC1F4471AF42E8C00B1EABA /* WhereViewController.m in Sources */,
 				CFC1F3411AF0958B00B1EABA /* AboutViewController.m in Sources */,
 				2F536EA21AE9EB7A00D7E696 /* main.m in Sources */,
 				CFEE82C91AEC47F500F85617 /* OptionsViewController.m in Sources */,
