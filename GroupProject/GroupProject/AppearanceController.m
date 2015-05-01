@@ -22,15 +22,33 @@
 
 + (void)initializeAppearanceDefaults {
     
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor brownColor]];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:21/255.0 green:158/255.0 blue:123/255.0 alpha:1]];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor brownColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:21/255.0 green:158/255.0 blue:123/255.0 alpha:1]];
     
-    [[UITabBar appearance] setBarTintColor:[UIColor brownColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:21/255.0 green:158/255.0 blue:123/255.0 alpha:1]];
     
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     
     [[UINavigationBar appearance] setTranslucent:NO];
+//    
+//    [[UIView appearance] setBackgroundColor:[UIColor colorWithRed:222/255.0 green:214/255.0 blue:189/255.0 alpha:1]];
+//
+//    [[UITextView appearance] setBackgroundColor:[UIColor clearColor]];
+//    
+//    [[UITextView appearance] setTextColor:[UIColor colorWithRed:48/255.0 green:48/255.0 blue:35/255.0 alpha:1]];
+//    
+//    [[UILabel appearance] setBackgroundColor:[UIColor clearColor]];
+//    
+//    [[UILabel appearance] setTextColor:[UIColor colorWithRed:48/255.0 green:48/255.0 blue:35/255.0 alpha:1]];
+//    
+//    [[UIImageView appearance] setBackgroundColor:[UIColor clearColor]];
+    
+    
+
+
 }
 
 

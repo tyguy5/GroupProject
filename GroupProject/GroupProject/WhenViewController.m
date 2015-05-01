@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
 
 
+
 @end
 
 @implementation WhenViewController
@@ -24,11 +25,14 @@
     // Do any additional setup after loading the view.
     
     self.dateSelectionText.text = @"";
-    
-    
-    self.datePicker.datePickerMode = UIDatePickerModeDate;
+
+    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
+
+
+
+
 
 - (IBAction)saveButtonTapped:(id)sender {
     
@@ -46,8 +50,8 @@
 - (void)showSelectedDate {
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"dd MMM YYYY"];
-    
+    [formatter setDateFormat:@"dd MMM YYYY HH:mm:ss"];
+
     
     self.dateSelectionText.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:self.datePicker.date]];
 }
