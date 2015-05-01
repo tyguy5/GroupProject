@@ -13,7 +13,7 @@
 @interface WhenViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
-@property (weak, nonatomic) IBOutlet UILabel *timeSelectionText;
+
 
 
 @end
@@ -25,21 +25,12 @@
     // Do any additional setup after loading the view.
     
     self.dateSelectionText.text = @"";
-    self.timeSelectionText.text = @"";
 
-    
-}
-- (IBAction)setDateButtonTapped:(id)sender {
-    
-    
-    self.datePicker.datePickerMode = UIDatePickerModeDate;
+    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
 
-- (IBAction)setTimeButtonTapped:(id)sender {
-    
-    
-}
+
 
 
 

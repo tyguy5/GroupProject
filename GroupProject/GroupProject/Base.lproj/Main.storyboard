@@ -617,15 +617,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8k-Vj-ibE">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Pbb-IL-TZR" kind="show" id="lBJ-zL-evD"/>
-                                </connections>
-                            </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-kr-UGv">
                                 <rect key="frame" x="-160" y="-81" width="320" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="451601285.95006001">
@@ -637,64 +628,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku4-Rg-lwI">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="279" width="368" height="21"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="253" width="368" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-D9-P7v">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Set Date">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="232" width="60" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="setDateButtonTapped:" destination="oXA-Cd-Fn8" eventType="touchUpInside" id="G1N-Dh-dvp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HL-4P-ktR">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Set Time">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="275" width="61" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="setTimeButtonTapped:" destination="oXA-Cd-Fn8" eventType="touchUpInside" id="cEA-Nq-4jy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="m8k-Vj-ibE" secondAttribute="trailing" constant="9" id="7Lb-Q0-KvK">
-                                <variation key="widthClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="l0c-Db-dER" firstAttribute="top" secondItem="2H0-QY-06d" secondAttribute="bottom" constant="20" id="8gz-ks-US6">
                                 <variation key="widthClass=compact" constant="8"/>
                             </constraint>
-                            <constraint firstAttribute="bottom" secondItem="m8k-Vj-ibE" secondAttribute="bottom" constant="20" symbolic="YES" id="9Tu-HS-l8A"/>
                             <constraint firstItem="l0c-Db-dER" firstAttribute="centerX" secondItem="2H0-QY-06d" secondAttribute="centerX" id="F0t-2E-t6O"/>
                             <constraint firstItem="0mF-Kj-1Lb" firstAttribute="top" secondItem="l0c-Db-dER" secondAttribute="bottom" constant="40" id="Jtz-ta-aUG">
-                                <variation key="widthClass=compact" constant="31"/>
+                                <variation key="widthClass=compact" constant="48"/>
                             </constraint>
                             <constraint firstItem="l0c-Db-dER" firstAttribute="centerX" secondItem="2bo-kr-UGv" secondAttribute="centerX" id="VFx-PQ-W4q"/>
                             <constraint firstItem="0mF-Kj-1Lb" firstAttribute="centerX" secondItem="l0c-Db-dER" secondAttribute="centerX" id="Vgj-X5-Ea1"/>
                             <constraint firstItem="2bo-kr-UGv" firstAttribute="top" secondItem="0mF-Kj-1Lb" secondAttribute="bottom" constant="79" id="asR-rb-HDd">
-                                <variation key="widthClass=compact" constant="88"/>
+                                <variation key="widthClass=compact" constant="71"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="2bo-kr-UGv" secondAttribute="trailing" id="bnX-Ts-kIN"/>
                             <constraint firstItem="2bo-kr-UGv" firstAttribute="top" secondItem="l0c-Db-dER" secondAttribute="bottom" constant="41" id="caW-eW-ICA">
                                 <variation key="widthClass=compact" constant="140"/>
                             </constraint>
-                            <constraint firstItem="0mF-Kj-1Lb" firstAttribute="trailing" secondItem="m8k-Vj-ibE" secondAttribute="trailing" id="dWb-pZ-v7D"/>
                             <constraint firstItem="2H0-QY-06d" firstAttribute="top" secondItem="xp5-VL-yY3" secondAttribute="bottom" constant="8" symbolic="YES" id="f5a-3C-4bO">
                                 <variation key="widthClass=compact" constant="28"/>
                             </constraint>
@@ -704,20 +660,13 @@
                             <mask key="subviews">
                                 <exclude reference="2H0-QY-06d"/>
                                 <exclude reference="l0c-Db-dER"/>
-                                <exclude reference="m8k-Vj-ibE"/>
                                 <exclude reference="2bo-kr-UGv"/>
                                 <exclude reference="0mF-Kj-1Lb"/>
-                                <exclude reference="Ku4-Rg-lwI"/>
-                                <exclude reference="Oou-D9-P7v"/>
-                                <exclude reference="9HL-4P-ktR"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Jtz-ta-aUG"/>
                                 <exclude reference="Vgj-X5-Ea1"/>
-                                <exclude reference="dWb-pZ-v7D"/>
                                 <exclude reference="f5a-3C-4bO"/>
-                                <exclude reference="7Lb-Q0-KvK"/>
-                                <exclude reference="9Tu-HS-l8A"/>
                                 <exclude reference="8gz-ks-US6"/>
                                 <exclude reference="F0t-2E-t6O"/>
                                 <exclude reference="VFx-PQ-W4q"/>
@@ -731,20 +680,13 @@
                             <mask key="subviews">
                                 <include reference="2H0-QY-06d"/>
                                 <include reference="l0c-Db-dER"/>
-                                <include reference="m8k-Vj-ibE"/>
                                 <include reference="2bo-kr-UGv"/>
                                 <include reference="0mF-Kj-1Lb"/>
-                                <include reference="Ku4-Rg-lwI"/>
-                                <include reference="Oou-D9-P7v"/>
-                                <include reference="9HL-4P-ktR"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Jtz-ta-aUG"/>
                                 <include reference="Vgj-X5-Ea1"/>
-                                <include reference="dWb-pZ-v7D"/>
                                 <include reference="f5a-3C-4bO"/>
-                                <include reference="7Lb-Q0-KvK"/>
-                                <include reference="9Tu-HS-l8A"/>
                                 <include reference="8gz-ks-US6"/>
                                 <include reference="F0t-2E-t6O"/>
                                 <include reference="VFx-PQ-W4q"/>
@@ -765,7 +707,6 @@
                     <connections>
                         <outlet property="datePicker" destination="2bo-kr-UGv" id="xMH-EL-MTt"/>
                         <outlet property="dateSelectionText" destination="0mF-Kj-1Lb" id="55B-gA-GRv"/>
-                        <outlet property="timeSelectionText" destination="Ku4-Rg-lwI" id="RMa-Bl-4k1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1283,9 +1224,9 @@
         <image name="popover" width="73" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uUi-sv-gxh"/>
-        <segue reference="7R6-m4-zPo"/>
         <segue reference="Q7v-u7-a14"/>
-        <segue reference="lBJ-zL-evD"/>
+        <segue reference="bQx-1s-c1G"/>
+        <segue reference="7R6-m4-zPo"/>
+        <segue reference="uUi-sv-gxh"/>
     </inferredMetricsTieBreakers>
 </document>
