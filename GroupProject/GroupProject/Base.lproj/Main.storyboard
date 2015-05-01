@@ -861,11 +861,15 @@
                                 <exclude reference="kId-Pt-dMA"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Uva-l6-y0a"/>
+                                <exclude reference="6Fb-y5-2UC"/>
+                                <exclude reference="GgW-hR-cQ7"/>
+                                <exclude reference="Doh-fX-5Ut"/>
                                 <exclude reference="1gZ-Sa-UYf"/>
                                 <exclude reference="GPe-9e-siI"/>
                                 <exclude reference="bU7-QP-5Dq"/>
-                                <exclude reference="Doh-fX-5Ut"/>
-                                <exclude reference="Uva-l6-y0a"/>
+                                <exclude reference="dzY-bb-uVc"/>
+                                <exclude reference="lpA-ri-dIA"/>
                                 <exclude reference="0zl-9G-i6t"/>
                                 <exclude reference="EIP-iw-zlk"/>
                                 <exclude reference="UNN-im-Pdg"/>
@@ -873,10 +877,6 @@
                                 <exclude reference="cab-h2-7XI"/>
                                 <exclude reference="e3l-qi-Cw0"/>
                                 <exclude reference="eAh-i9-wNA"/>
-                                <exclude reference="6Fb-y5-2UC"/>
-                                <exclude reference="dzY-bb-uVc"/>
-                                <exclude reference="lpA-ri-dIA"/>
-                                <exclude reference="GgW-hR-cQ7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -890,11 +890,15 @@
                                 <include reference="kId-Pt-dMA"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Uva-l6-y0a"/>
+                                <include reference="6Fb-y5-2UC"/>
+                                <include reference="GgW-hR-cQ7"/>
+                                <include reference="Doh-fX-5Ut"/>
                                 <include reference="1gZ-Sa-UYf"/>
                                 <include reference="GPe-9e-siI"/>
                                 <include reference="bU7-QP-5Dq"/>
-                                <include reference="Doh-fX-5Ut"/>
-                                <include reference="Uva-l6-y0a"/>
+                                <include reference="dzY-bb-uVc"/>
+                                <include reference="lpA-ri-dIA"/>
                                 <include reference="0zl-9G-i6t"/>
                                 <include reference="EIP-iw-zlk"/>
                                 <include reference="UNN-im-Pdg"/>
@@ -902,10 +906,6 @@
                                 <include reference="cab-h2-7XI"/>
                                 <include reference="e3l-qi-Cw0"/>
                                 <include reference="eAh-i9-wNA"/>
-                                <include reference="6Fb-y5-2UC"/>
-                                <include reference="dzY-bb-uVc"/>
-                                <include reference="lpA-ri-dIA"/>
-                                <include reference="GgW-hR-cQ7"/>
                             </mask>
                         </variation>
                     </view>
@@ -963,7 +963,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Pbb-IL-TZR" id="bBC-DL-mrL"/>
+                            <outlet property="dataSource" destination="Pbb-IL-TZR" id="88U-EW-IfL"/>
                             <outlet property="delegate" destination="Pbb-IL-TZR" id="j6H-OS-esh"/>
                         </connections>
                     </tableView>

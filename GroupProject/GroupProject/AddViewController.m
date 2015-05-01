@@ -7,6 +7,7 @@
 //
 
 #import "AddViewController.h"
+#import "EntryController.h"
 
 @interface AddViewController () <UITextFieldDelegate>
 
@@ -32,8 +33,11 @@
     
     return YES;
 }
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text];
+}
 
-/*
+/*.text
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
