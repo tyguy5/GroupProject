@@ -25,6 +25,7 @@
     
     self.mapView.showsUserLocation = YES;
     self.mapView.showsPointsOfInterest = YES;
+    self.mapView.delegate = self;
     
     MKUserLocation *userLocation = self.mapView.userLocation;
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
@@ -33,9 +34,13 @@
     
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    
 
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    self.mapView.centerCoordinate = userLocation.location.coordinate;
+    
+    
+    
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
