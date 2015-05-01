@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZX4-5T-Clv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZX4-5T-Clv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -1243,9 +1243,9 @@
         <image name="popover" width="73" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q7v-u7-a14"/>
-        <segue reference="bQx-1s-c1G"/>
-        <segue reference="7R6-m4-zPo"/>
         <segue reference="uUi-sv-gxh"/>
+        <segue reference="7R6-m4-zPo"/>
+        <segue reference="Q7v-u7-a14"/>
+        <segue reference="lBJ-zL-evD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 #import "WhenViewController.h"
 #import "EntryController.h"
 
+
 @interface WhenViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
@@ -36,6 +37,8 @@
     self.entry.timestamp = [NSDate date];
     
     [[EntryController sharedInstance] save];
+    
+    [self.tabBarController setSelectedIndex:1];
 
 }
 
