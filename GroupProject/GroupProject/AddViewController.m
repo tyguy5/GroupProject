@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self updateWithEntry:self.entry];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +36,11 @@
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField {
     self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text];
+}
+
+-(void)updateWithEntry:(Entry *)entry {
+    self.titleTextField.text = entry.titleOfEntry;
+    
 }
 
 /*.text

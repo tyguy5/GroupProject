@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZX4-5T-Clv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZX4-5T-Clv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -574,18 +574,18 @@
                                 <exclude reference="omO-8C-Thb"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="KeA-mw-nlP"/>
                                 <exclude reference="9b9-Ih-GO3"/>
+                                <exclude reference="XY0-NT-nPL"/>
                                 <exclude reference="0HS-Uy-TvZ"/>
                                 <exclude reference="EcK-Jv-KEs"/>
                                 <exclude reference="d0F-lO-E8M"/>
-                                <exclude reference="KeA-mw-nlP"/>
                                 <exclude reference="2hE-f9-qRh"/>
                                 <exclude reference="F94-nx-qRC"/>
                                 <exclude reference="b36-b2-uHb"/>
                                 <exclude reference="gyH-4B-e5S"/>
                                 <exclude reference="h9R-B2-IgM"/>
                                 <exclude reference="t7k-OD-nmN"/>
-                                <exclude reference="XY0-NT-nPL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -597,18 +597,18 @@
                                 <include reference="omO-8C-Thb"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="KeA-mw-nlP"/>
                                 <include reference="9b9-Ih-GO3"/>
+                                <include reference="XY0-NT-nPL"/>
                                 <include reference="0HS-Uy-TvZ"/>
                                 <include reference="EcK-Jv-KEs"/>
                                 <include reference="d0F-lO-E8M"/>
-                                <include reference="KeA-mw-nlP"/>
                                 <include reference="2hE-f9-qRh"/>
                                 <include reference="F94-nx-qRC"/>
                                 <include reference="b36-b2-uHb"/>
                                 <include reference="gyH-4B-e5S"/>
                                 <include reference="h9R-B2-IgM"/>
                                 <include reference="t7k-OD-nmN"/>
-                                <include reference="XY0-NT-nPL"/>
                             </mask>
                         </variation>
                     </view>
@@ -979,7 +979,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="uRP-AS-2KS" kind="showDetail" identifier="viewEntry" id="Q7v-u7-a14"/>
+                                    <segue destination="uRP-AS-2KS" kind="show" identifier="viewEntry" id="Q7v-u7-a14"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1264,9 +1264,9 @@
         <image name="popover" width="73" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LQn-B5-CyF"/>
-        <segue reference="7R6-m4-zPo"/>
+        <segue reference="Q7v-u7-a14"/>
         <segue reference="bQx-1s-c1G"/>
+        <segue reference="7R6-m4-zPo"/>
         <segue reference="uUi-sv-gxh"/>
     </inferredMetricsTieBreakers>
 </document>
