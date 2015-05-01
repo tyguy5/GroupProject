@@ -536,7 +536,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Radius (meters)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEB-6K-UCb">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="omO-8C-Thb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -547,6 +547,9 @@
                                     <segment title="Upon Entry"/>
                                     <segment title="Upon Exit"/>
                                 </segments>
+                                <connections>
+                                    <action selector="EntryExitButtonTapped:" destination="WXN-4Q-sp0" eventType="valueChanged" id="uid-1Z-9cW"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-uM-hZM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -650,6 +653,7 @@
                     <navigationItem key="navigationItem" title="Where" id="jZk-P9-Ob7"/>
                     <connections>
                         <outlet property="mapView" destination="omO-8C-Thb" id="m92-mv-D2f"/>
+                        <outlet property="radiusTextField" destination="wEB-6K-UCb" id="cR9-y3-XVU"/>
                         <outlet property="textField" destination="RqD-Il-XM1" id="1qm-MN-dIx"/>
                         <segue destination="Pbb-IL-TZR" kind="show" identifier="segueIdentifier" id="bQx-1s-c1G"/>
                     </connections>

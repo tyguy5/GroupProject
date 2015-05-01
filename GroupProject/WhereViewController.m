@@ -14,6 +14,7 @@
 @interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITextField *radiusTextField;
 
 @end
 
@@ -39,6 +40,8 @@
     
     self.mapView.centerCoordinate = userLocation.location.coordinate;
     
+}
+- (IBAction)EntryExitButtonTapped:(id)sender {
     
     
 }
