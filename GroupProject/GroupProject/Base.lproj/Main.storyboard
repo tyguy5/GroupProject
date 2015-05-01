@@ -963,13 +963,17 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Pbb-IL-TZR" id="88U-EW-IfL"/>
+                            <outlet property="dataSource" destination="KiN-1d-9Rg" id="Hfk-xb-ZWq"/>
                             <outlet property="delegate" destination="Pbb-IL-TZR" id="j6H-OS-esh"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To-do List" id="zgz-vB-YvH"/>
+                    <connections>
+                        <outlet property="tableView" destination="gMI-n0-pfX" id="fTh-Fr-CZU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HT0-Xo-gyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="KiN-1d-9Rg" customClass="ListViewDataSource"/>
             </objects>
             <point key="canvasLocation" x="4674" y="468"/>
         </scene>
