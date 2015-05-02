@@ -65,7 +65,7 @@
     [self showSelectedDate];
 //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
     self.entry.timestamp = self.datePicker.date;
-    
+    self.entry.endTimeStamp = self.datePicker2.date;
     
     [[EntryController sharedInstance] save];
     
