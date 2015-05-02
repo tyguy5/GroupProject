@@ -14,6 +14,7 @@
 @interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITextField *radiusTextField;
 
 @end
 
@@ -41,6 +42,8 @@
     
     
     
+}
+- (IBAction)EntryExitButtonTapped:(id)sender {
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
