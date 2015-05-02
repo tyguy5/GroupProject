@@ -474,9 +474,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="452296850.05626899">
                                     <!--2015-05-02 22:00:50 +0000-->
                                 </date>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="342" width="400" height="162"/>
-                                </variation>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -487,6 +484,7 @@
                             <constraint firstItem="Edl-cJ-TWC" firstAttribute="baseline" secondItem="8xx-ZM-Bz4" secondAttribute="baseline" id="G5r-yp-Wmf"/>
                             <constraint firstItem="asc-Fs-NxW" firstAttribute="baseline" secondItem="oip-e1-PLU" secondAttribute="baseline" id="H1l-Lv-CeB"/>
                             <constraint firstItem="l0c-Db-dER" firstAttribute="centerX" secondItem="2H0-QY-06d" secondAttribute="centerX" id="HNc-Jb-yke"/>
+                            <constraint firstItem="9Hh-k0-JjI" firstAttribute="trailing" secondItem="Mp0-rD-zEb" secondAttribute="trailing" id="IdI-ct-rge"/>
                             <constraint firstItem="gKB-bI-e8c" firstAttribute="top" secondItem="Mp0-rD-zEb" secondAttribute="bottom" constant="96" id="Ka5-in-tV5"/>
                             <constraint firstItem="oip-e1-PLU" firstAttribute="top" secondItem="8xx-ZM-Bz4" secondAttribute="bottom" constant="8" symbolic="YES" id="NgF-8T-ItX"/>
                             <constraint firstItem="oip-e1-PLU" firstAttribute="leading" secondItem="8xx-ZM-Bz4" secondAttribute="leading" id="WZN-mh-PY5"/>
@@ -497,6 +495,8 @@
                             <constraint firstItem="2H0-QY-06d" firstAttribute="centerX" secondItem="dPB-5W-hKU" secondAttribute="centerX" id="gpc-BU-wQ4"/>
                             <constraint firstItem="Mp0-rD-zEb" firstAttribute="top" secondItem="oip-e1-PLU" secondAttribute="bottom" constant="8" symbolic="YES" id="iho-4A-kZk"/>
                             <constraint firstAttribute="trailing" secondItem="dPB-5W-hKU" secondAttribute="trailing" id="lY3-RN-Xdl"/>
+                            <constraint firstItem="9Hh-k0-JjI" firstAttribute="leading" secondItem="Mp0-rD-zEb" secondAttribute="leading" id="ohu-dX-mfU"/>
+                            <constraint firstItem="9Hh-k0-JjI" firstAttribute="top" secondItem="Mp0-rD-zEb" secondAttribute="top" id="r4H-co-ggt"/>
                             <constraint firstItem="dPB-5W-hKU" firstAttribute="trailing" secondItem="Mp0-rD-zEb" secondAttribute="trailing" id="tLe-9C-gG8"/>
                             <constraint firstItem="asc-Fs-NxW" firstAttribute="trailing" secondItem="0SU-p0-RbH" secondAttribute="trailingMargin" id="x2J-al-5gP"/>
                         </constraints>
@@ -523,6 +523,9 @@
                                 <exclude reference="fSp-Rv-7yF"/>
                                 <exclude reference="NgF-8T-ItX"/>
                                 <exclude reference="WZN-mh-PY5"/>
+                                <exclude reference="IdI-ct-rge"/>
+                                <exclude reference="ohu-dX-mfU"/>
+                                <exclude reference="r4H-co-ggt"/>
                                 <exclude reference="8pB-RL-YCC"/>
                                 <exclude reference="f6g-yc-8qC"/>
                                 <exclude reference="iho-4A-kZk"/>
@@ -556,6 +559,9 @@
                                 <include reference="fSp-Rv-7yF"/>
                                 <include reference="NgF-8T-ItX"/>
                                 <include reference="WZN-mh-PY5"/>
+                                <include reference="IdI-ct-rge"/>
+                                <include reference="ohu-dX-mfU"/>
+                                <include reference="r4H-co-ggt"/>
                                 <include reference="8pB-RL-YCC"/>
                                 <include reference="f6g-yc-8qC"/>
                                 <include reference="iho-4A-kZk"/>
