@@ -8,10 +8,7 @@
 
 #import "AppearanceController.h"
 #import "TabBarController.h"
-
-#import "LoginViewController.h"
 #import "WelcomeViewController.h"
-
 #import "OptionsViewController.h"
 #import "AddViewController.h"
 
