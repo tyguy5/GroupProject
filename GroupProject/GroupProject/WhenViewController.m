@@ -12,9 +12,11 @@
 
 
 @interface WhenViewController ()
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
 @property (weak, nonatomic) IBOutlet UILabel *endDateSelectionText;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
 
 
 
@@ -29,18 +31,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.datePicker.hidden = YES;
     self.dateSelectionText.text = @"";
 
-    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+
     
 }
 - (IBAction)setStartTimeButtonTapped:(id)sender {
     
+    self.datePicker.hidden = NO;
+    
+    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
 
 - (IBAction)setEndTimeButtonTapped:(id)sender {
     
+    self.datePicker.hidden = YES;
+    self.datePicker2.hidden = NO;
+    
+    self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
 
@@ -49,14 +59,12 @@
 
 - (IBAction)saveButtonTapped:(id)sender {
     
-    [self showSelectedDate];
+//    [self showSelectedDate];
 //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
     self.entry.timestamp = self.datePicker.date;
     
     [[EntryController sharedInstance] save];
     
-    [self.tabBarController setSelectedIndex:1];
-
 }
 
 
