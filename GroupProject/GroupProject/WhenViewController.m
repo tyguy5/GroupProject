@@ -13,7 +13,9 @@
 
 @interface WhenViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
+@property (weak, nonatomic) IBOutlet UILabel *endDateSelectionText;
 
 
 
@@ -34,7 +36,11 @@
     
 }
 
+- (IBAction)setStartTimeButtonTapped:(id)sender {
+}
 
+- (IBAction)setEndTimeButtonTapped:(id)sender {
+}
 
 
 

@@ -407,7 +407,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPB-5W-hKU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="hZ0-Q4-0B2">
+                                    <navigationItem title="Set Time Range" id="hZ0-Q4-0B2">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="lvT-zZ-YMR">
                                             <connections>
                                                 <action selector="whenViewDone:" destination="oXA-Cd-Fn8" id="NnP-7b-5Tm"/>
@@ -419,11 +419,71 @@
                                     <rect key="frame" x="0.0" y="20" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-kr-UGv">
+                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="451601285.95006001">
+                                    <!--2015-04-24 20:48:05 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQf-Gy-oay">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="342" y="261" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dt-eH-I0D">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="342" y="290" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-vf-Iri">
+                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="452299420.721968">
+                                    <!--2015-05-02 22:43:40 +0000-->
+                                </date>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="345" width="400" height="162"/>
+                                </variation>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RE-P4-RFH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Set start time">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="257" width="92" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="setStartTimeButtonTapped:" destination="oXA-Cd-Fn8" eventType="touchUpInside" id="Qyo-Fl-wMq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqH-tD-dXF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Set end time">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="286" width="87" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="setEndTimeButtonTapped:" destination="oXA-Cd-Fn8" eventType="touchUpInside" id="ZCf-pK-PUk"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When should we remind you?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H0-QY-06d">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="87" y="80" width="227" height="21"/>
+                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhenView" translatesAutoresizingMaskIntoConstraints="NO" id="l0c-Db-dER">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -437,19 +497,14 @@
                                         <exclude reference="feY-Nd-JmF"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="136" y="109" width="128" height="128"/>
                                     <mask key="constraints">
                                         <include reference="F04-FS-7zz"/>
                                         <include reference="feY-Nd-JmF"/>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-kr-UGv">
-                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="451601285.95006001">
-                                    <!--2015-04-24 20:48:05 +0000-->
-                                </date>
-                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -470,9 +525,14 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="dPB-5W-hKU"/>
+                                <exclude reference="2bo-kr-UGv"/>
+                                <exclude reference="GQf-Gy-oay"/>
+                                <exclude reference="6dt-eH-I0D"/>
+                                <exclude reference="PqO-vf-Iri"/>
+                                <exclude reference="7RE-P4-RFH"/>
+                                <exclude reference="mqH-tD-dXF"/>
                                 <exclude reference="2H0-QY-06d"/>
                                 <exclude reference="l0c-Db-dER"/>
-                                <exclude reference="2bo-kr-UGv"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="f5a-3C-4bO"/>
@@ -487,9 +547,14 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="dPB-5W-hKU"/>
+                                <include reference="2bo-kr-UGv"/>
+                                <include reference="GQf-Gy-oay"/>
+                                <include reference="6dt-eH-I0D"/>
+                                <include reference="PqO-vf-Iri"/>
+                                <include reference="7RE-P4-RFH"/>
+                                <include reference="mqH-tD-dXF"/>
                                 <include reference="2H0-QY-06d"/>
                                 <include reference="l0c-Db-dER"/>
-                                <include reference="2bo-kr-UGv"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="f5a-3C-4bO"/>
@@ -511,6 +576,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="2bo-kr-UGv" id="xMH-EL-MTt"/>
+                        <outlet property="datePicker2" destination="PqO-vf-Iri" id="LLy-Kc-zLY"/>
+                        <outlet property="dateSelectionText" destination="GQf-Gy-oay" id="B1b-K3-nbF"/>
+                        <outlet property="endDateSelectionText" destination="6dt-eH-I0D" id="ZlF-j7-fOv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
