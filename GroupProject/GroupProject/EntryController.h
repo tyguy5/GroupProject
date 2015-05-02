@@ -16,6 +16,7 @@
 + (EntryController *) sharedInstance;
 -(void) save;
 - (Entry *) createEntryWithTitle: (NSString *) title;
+- (Entry *) createTimeStamp: (NSDate *) date;
 
 
 @end

@@ -8,6 +8,7 @@
 
 #import "WhenViewController.h"
 #import "EntryController.h"
+#import "Stack.h"
 
 
 @interface WhenViewController ()
@@ -37,8 +38,7 @@
 - (IBAction)saveButtonTapped:(id)sender {
     
     [self showSelectedDate];
-    
-    self.entry.timestamp = [NSDate date];
+    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
     
     [[EntryController sharedInstance] save];
     
