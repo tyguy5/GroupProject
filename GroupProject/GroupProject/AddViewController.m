@@ -8,6 +8,10 @@
 
 #import "AddViewController.h"
 #import "EntryController.h"
+#import "WhenViewController.h"
+
+static NSString *const setTimeSegue = @"setTime";
+static NSString *const setLocationSeque = @"setLocation";
 
 @interface AddViewController () <UITextFieldDelegate>
 
@@ -43,14 +47,16 @@
     
 }
 
-/*.text
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:setTimeSegue]) {
+        WhenViewController *whenVC = segue.destinationViewController;
+        whenVC.entry = self.entry;
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
 @end
