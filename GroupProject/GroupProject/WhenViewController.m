@@ -14,12 +14,6 @@
 @interface WhenViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
 @property (weak, nonatomic) IBOutlet UILabel *endDateSelectionText;
-<<<<<<< HEAD
-
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
-=======
->>>>>>> adds buttons and labels to when view
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
@@ -38,15 +32,11 @@
     // Do any additional setup after loading the view.
     
     self.datePicker.hidden = YES;
-<<<<<<< HEAD
     self.datePicker2.hidden = YES;
     
-=======
->>>>>>> adds date pickers and ibactions
     self.dateSelectionText.text = @"";
     self.endDateSelectionText.text = @"";
 
-<<<<<<< HEAD
 }
 - (IBAction)setStartTimeButtonTapped:(id)sender {
     
@@ -54,52 +44,28 @@
     self.datePicker.timeZone = [NSTimeZone localTimeZone];
     
     self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
-=======
-
->>>>>>> adds date pickers and ibactions
-    
-}
-- (IBAction)setStartTimeButtonTapped:(id)sender {
-    
-    self.datePicker.hidden = NO;
-    
-    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
 
 - (IBAction)setEndTimeButtonTapped:(id)sender {
     
-<<<<<<< HEAD
-<<<<<<< HEAD
     self.datePicker.hidden = YES;
     self.datePicker2.hidden = NO;
     self.datePicker2.timeZone = [NSTimeZone localTimeZone];
     
-    self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
-    
-    [self showSelectedDate];
-    
-}
-=======
-=======
-    self.datePicker.hidden = YES;
-    self.datePicker2.hidden = NO;
     
     self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
->>>>>>> adds date pickers and ibactions
     
 }
-
->>>>>>> adds buttons and labels to when view
 
 
 
 - (IBAction)saveButtonTapped:(id)sender {
     
-//    [self showSelectedDate];
+    [self showSelectedDate];
 //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
     self.entry.timestamp = self.datePicker.date;
-    self.entry.endTimeStamp = self.datePicker2.date;
+    
     
     [[EntryController sharedInstance] save];
     
