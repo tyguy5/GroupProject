@@ -20,6 +20,9 @@
 @end
 
 @implementation WhenViewController
+- (IBAction)whenViewDone:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
