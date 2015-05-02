@@ -27,7 +27,7 @@
     entry.titleOfEntry = title;
    // entry.timestamp = [NSDate date];
     
-    [self saveToPersistentStorage];
+//    [self saveToPersistentStorage];
     
     return entry;
     

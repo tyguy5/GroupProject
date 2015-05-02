@@ -38,7 +38,8 @@
 - (IBAction)saveButtonTapped:(id)sender {
     
     [self showSelectedDate];
-    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
+//    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
+    self.entry.timestamp = self.datePicker.date;
     
     [[EntryController sharedInstance] save];
     
