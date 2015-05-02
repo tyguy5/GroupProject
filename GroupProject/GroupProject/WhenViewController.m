@@ -14,9 +14,12 @@
 @interface WhenViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *dateSelectionText;
 @property (weak, nonatomic) IBOutlet UILabel *endDateSelectionText;
+<<<<<<< HEAD
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
+=======
+>>>>>>> adds buttons and labels to when view
 
 
 
@@ -46,9 +49,14 @@
     self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
+- (IBAction)setStartTimeButtonTapped:(id)sender {
+    
+    
+}
 
 - (IBAction)setEndTimeButtonTapped:(id)sender {
     
+<<<<<<< HEAD
     self.datePicker.hidden = YES;
     self.datePicker2.hidden = NO;
     self.datePicker2.timeZone = [NSTimeZone localTimeZone];
@@ -58,6 +66,11 @@
     [self showSelectedDate];
     
 }
+=======
+    
+}
+
+>>>>>>> adds buttons and labels to when view
 
 
 
