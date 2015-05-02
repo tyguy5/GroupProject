@@ -2,7 +2,7 @@
 //  Entry.h
 //  GroupProject
 //
-//  Created by Alan Barth on 4/25/15.
+//  Created by Dalton on 5/2/15.
 //  Copyright (c) 2015 Front Row Joes Inc. All rights reserved.
 //
 
@@ -12,8 +12,9 @@
 
 @interface Entry : NSManagedObject
 
-@property (nonatomic, retain) NSDate * timestamp;
 @property (nonatomic, retain) NSString * recentLocations;
+@property (nonatomic, retain) NSDate * timestamp;
 @property (nonatomic, retain) NSString * titleOfEntry;
+@property (nonatomic, retain) NSDate * endTimeStamp;
 
 @end

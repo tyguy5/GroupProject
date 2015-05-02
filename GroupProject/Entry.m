@@ -2,7 +2,7 @@
 //  Entry.m
 //  GroupProject
 //
-//  Created by Alan Barth on 4/25/15.
+//  Created by Dalton on 5/2/15.
 //  Copyright (c) 2015 Front Row Joes Inc. All rights reserved.
 //
 
@@ -11,8 +11,9 @@
 
 @implementation Entry
 
-@dynamic timestamp;
 @dynamic recentLocations;
+@dynamic timestamp;
 @dynamic titleOfEntry;
+@dynamic endTimeStamp;
 
 @end
