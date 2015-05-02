@@ -17,7 +17,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCell"];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", entry.titleOfEntry, entry.timestamp];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterShortStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    NSDate *now = entry.timestamp;
+    NSString *prettyDate = [formatter stringFromDate:now];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", entry.titleOfEntry, prettyDate];
     
     return cell;
 }
