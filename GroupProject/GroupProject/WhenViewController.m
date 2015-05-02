@@ -29,14 +29,16 @@
     // Do any additional setup after loading the view.
     
     self.datePicker.hidden = YES;
-    self.dateSelectionText.text = @"";
-
-
+    self.datePicker2.hidden = YES;
     
+    self.dateSelectionText.text = @"";
+    self.endDateSelectionText.text = @"";
+
 }
 - (IBAction)setStartTimeButtonTapped:(id)sender {
     
     self.datePicker.hidden = NO;
+    self.datePicker.timeZone = [NSTimeZone localTimeZone];
     
     self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
@@ -46,6 +48,8 @@
     
     self.datePicker.hidden = YES;
     self.datePicker2.hidden = NO;
+    self.datePicker2.timeZone = [NSTimeZone localTimeZone];
+    
     
     self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
     
@@ -53,12 +57,12 @@
 
 
 
-
 - (IBAction)saveButtonTapped:(id)sender {
     
-//    [self showSelectedDate];
+    [self showSelectedDate];
 //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
     self.entry.timestamp = self.datePicker.date;
+    
     
     [[EntryController sharedInstance] save];
     
@@ -72,6 +76,16 @@
 
     
     self.dateSelectionText.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:self.datePicker.date]];
+}
+
+
+- (void)showSelectedEndDate {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd MMM YYY HH:mm:ss"];
+    
+    
+    self.endDateSelectionText.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:self.datePicker2.date]];
 }
 
 @end
