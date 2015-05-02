@@ -21,6 +21,9 @@
 =======
 >>>>>>> adds buttons and labels to when view
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
+
 
 
 @end
@@ -35,11 +38,15 @@
     // Do any additional setup after loading the view.
     
     self.datePicker.hidden = YES;
+<<<<<<< HEAD
     self.datePicker2.hidden = YES;
     
+=======
+>>>>>>> adds date pickers and ibactions
     self.dateSelectionText.text = @"";
     self.endDateSelectionText.text = @"";
 
+<<<<<<< HEAD
 }
 - (IBAction)setStartTimeButtonTapped:(id)sender {
     
@@ -47,15 +54,22 @@
     self.datePicker.timeZone = [NSTimeZone localTimeZone];
     
     self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+=======
+
+>>>>>>> adds date pickers and ibactions
     
 }
 - (IBAction)setStartTimeButtonTapped:(id)sender {
     
+    self.datePicker.hidden = NO;
+    
+    self.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
 
 - (IBAction)setEndTimeButtonTapped:(id)sender {
     
+<<<<<<< HEAD
 <<<<<<< HEAD
     self.datePicker.hidden = YES;
     self.datePicker2.hidden = NO;
@@ -67,6 +81,12 @@
     
 }
 =======
+=======
+    self.datePicker.hidden = YES;
+    self.datePicker2.hidden = NO;
+    
+    self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
+>>>>>>> adds date pickers and ibactions
     
 }
 
