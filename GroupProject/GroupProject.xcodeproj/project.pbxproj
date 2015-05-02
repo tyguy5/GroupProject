@@ -26,7 +26,6 @@
 		CFC1F4441AF42E2C00B1EABA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC1F4431AF42E2C00B1EABA /* MapKit.framework */; };
 		CFC1F4471AF42E8C00B1EABA /* WhereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F4461AF42E8C00B1EABA /* WhereViewController.m */; };
 		CFDF3CE21AEDED3E0013FE4C /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE11AEDED3E0013FE4C /* TabBarController.m */; };
-		CFDF3CE51AEDF7DE0013FE4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE41AEDF7DE0013FE4C /* LoginViewController.m */; };
 		CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CE71AEDF7F00013FE4C /* WelcomeViewController.m */; };
 		CFDF3CEB1AEDFCA20013FE4C /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF3CEA1AEDFCA20013FE4C /* AddViewController.m */; };
 		CFEE82C91AEC47F500F85617 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE82C81AEC47F500F85617 /* OptionsViewController.m */; };
@@ -77,8 +76,6 @@
 		CFC1F4461AF42E8C00B1EABA /* WhereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhereViewController.m; path = ../WhereViewController.m; sourceTree = "<group>"; };
 		CFDF3CE01AEDED3E0013FE4C /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		CFDF3CE11AEDED3E0013FE4C /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		CFDF3CE31AEDF7DE0013FE4C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		CFDF3CE41AEDF7DE0013FE4C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CFDF3CE61AEDF7F00013FE4C /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		CFDF3CE71AEDF7F00013FE4C /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		CFDF3CE91AEDFCA20013FE4C /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
@@ -200,8 +197,6 @@
 		2F536ECB1AEA0F7900D7E696 /* OnboardingProcess */ = {
 			isa = PBXGroup;
 			children = (
-				CFDF3CE31AEDF7DE0013FE4C /* LoginViewController.h */,
-				CFDF3CE41AEDF7DE0013FE4C /* LoginViewController.m */,
 				CFDF3CE61AEDF7F00013FE4C /* WelcomeViewController.h */,
 				CFDF3CE71AEDF7F00013FE4C /* WelcomeViewController.m */,
 			);
@@ -341,7 +336,6 @@
 				2F536EA51AE9EB7A00D7E696 /* AppDelegate.m in Sources */,
 				CFDF3CEB1AEDFCA20013FE4C /* AddViewController.m in Sources */,
 				2CFAE0C21AEC19CC00920265 /* EntryController.m in Sources */,
-				CFDF3CE51AEDF7DE0013FE4C /* LoginViewController.m in Sources */,
 				CFDF3CE21AEDED3E0013FE4C /* TabBarController.m in Sources */,
 				CFC1F33E1AF085A900B1EABA /* WhenViewController.m in Sources */,
 				CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */,
