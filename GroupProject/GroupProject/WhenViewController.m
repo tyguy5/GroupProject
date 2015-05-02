@@ -52,13 +52,15 @@
     
     self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
     
+    [self showSelectedDate];
+    
 }
 
 
 
 - (IBAction)saveButtonTapped:(id)sender {
     
-    [self showSelectedDate];
+//    [self showSelectedDate];
 //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
     self.entry.timestamp = self.datePicker.date;
     self.entry.endTimeStamp = self.datePicker2.date;
