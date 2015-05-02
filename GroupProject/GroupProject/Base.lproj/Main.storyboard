@@ -536,7 +536,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Radius (meters)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEB-6K-UCb">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="omO-8C-Thb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -547,6 +547,9 @@
                                     <segment title="Upon Entry"/>
                                     <segment title="Upon Exit"/>
                                 </segments>
+                                <connections>
+                                    <action selector="EntryExitButtonTapped:" destination="WXN-4Q-sp0" eventType="valueChanged" id="iZu-j9-0ez"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-uM-hZM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -590,26 +593,26 @@
                                 <exclude reference="VFG-uM-hZM"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="IaX-fS-Yb8"/>
-                                <exclude reference="i2M-im-jQd"/>
-                                <exclude reference="EDv-A4-7hO"/>
-                                <exclude reference="k4q-bY-6hv"/>
+                                <exclude reference="aZC-Zt-fzf"/>
                                 <exclude reference="6AD-8P-0Ho"/>
                                 <exclude reference="Lwc-1S-Me8"/>
+                                <exclude reference="GVw-0r-ZZh"/>
+                                <exclude reference="qNe-v8-Zw4"/>
+                                <exclude reference="IaX-fS-Yb8"/>
+                                <exclude reference="i2M-im-jQd"/>
+                                <exclude reference="1pT-az-PbJ"/>
+                                <exclude reference="8B3-4j-NvF"/>
+                                <exclude reference="CJY-3r-R44"/>
+                                <exclude reference="lEp-Nh-YtD"/>
+                                <exclude reference="DJN-rO-oYJ"/>
+                                <exclude reference="YUb-I5-TiH"/>
+                                <exclude reference="EDv-A4-7hO"/>
+                                <exclude reference="k4q-bY-6hv"/>
                                 <exclude reference="4ZS-gv-XEW"/>
                                 <exclude reference="8PJ-K7-xRe"/>
                                 <exclude reference="HJW-HQ-ZVV"/>
                                 <exclude reference="exx-8z-Isy"/>
                                 <exclude reference="sqY-au-jdr"/>
-                                <exclude reference="1pT-az-PbJ"/>
-                                <exclude reference="8B3-4j-NvF"/>
-                                <exclude reference="GVw-0r-ZZh"/>
-                                <exclude reference="qNe-v8-Zw4"/>
-                                <exclude reference="DJN-rO-oYJ"/>
-                                <exclude reference="YUb-I5-TiH"/>
-                                <exclude reference="aZC-Zt-fzf"/>
-                                <exclude reference="CJY-3r-R44"/>
-                                <exclude reference="lEp-Nh-YtD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -624,32 +627,33 @@
                                 <include reference="VFG-uM-hZM"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="IaX-fS-Yb8"/>
-                                <include reference="i2M-im-jQd"/>
-                                <include reference="EDv-A4-7hO"/>
-                                <include reference="k4q-bY-6hv"/>
+                                <include reference="aZC-Zt-fzf"/>
                                 <include reference="6AD-8P-0Ho"/>
                                 <include reference="Lwc-1S-Me8"/>
+                                <include reference="GVw-0r-ZZh"/>
+                                <include reference="qNe-v8-Zw4"/>
+                                <include reference="IaX-fS-Yb8"/>
+                                <include reference="i2M-im-jQd"/>
+                                <include reference="1pT-az-PbJ"/>
+                                <include reference="8B3-4j-NvF"/>
+                                <include reference="CJY-3r-R44"/>
+                                <include reference="lEp-Nh-YtD"/>
+                                <include reference="DJN-rO-oYJ"/>
+                                <include reference="YUb-I5-TiH"/>
+                                <include reference="EDv-A4-7hO"/>
+                                <include reference="k4q-bY-6hv"/>
                                 <include reference="4ZS-gv-XEW"/>
                                 <include reference="8PJ-K7-xRe"/>
                                 <include reference="HJW-HQ-ZVV"/>
                                 <include reference="exx-8z-Isy"/>
                                 <include reference="sqY-au-jdr"/>
-                                <include reference="1pT-az-PbJ"/>
-                                <include reference="8B3-4j-NvF"/>
-                                <include reference="GVw-0r-ZZh"/>
-                                <include reference="qNe-v8-Zw4"/>
-                                <include reference="DJN-rO-oYJ"/>
-                                <include reference="YUb-I5-TiH"/>
-                                <include reference="aZC-Zt-fzf"/>
-                                <include reference="CJY-3r-R44"/>
-                                <include reference="lEp-Nh-YtD"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Where" id="jZk-P9-Ob7"/>
                     <connections>
                         <outlet property="mapView" destination="omO-8C-Thb" id="m92-mv-D2f"/>
+                        <outlet property="radiusTextField" destination="wEB-6K-UCb" id="LNW-dp-Fw9"/>
                         <outlet property="textField" destination="RqD-Il-XM1" id="1qm-MN-dIx"/>
                         <segue destination="Pbb-IL-TZR" kind="show" identifier="segueIdentifier" id="bQx-1s-c1G"/>
                     </connections>
