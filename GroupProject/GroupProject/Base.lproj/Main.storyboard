@@ -219,7 +219,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="xBW-Kq-9Je">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4IQ-eB-kki"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4IQ-eB-kki">
+                                            <connections>
+                                                <action selector="whereViewDone:" destination="WXN-4Q-sp0" id="3gi-DR-2VW"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -404,7 +408,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="hZ0-Q4-0B2">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lvT-zZ-YMR"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lvT-zZ-YMR">
+                                            <connections>
+                                                <action selector="whenViewDone:" destination="oXA-Cd-Fn8" id="NnP-7b-5Tm"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -598,7 +606,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Add" id="4RY-qc-lnc">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Wu7-NP-7l6"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Wu7-NP-7l6">
+                                            <connections>
+                                                <action selector="addViewDone:" destination="uRP-AS-2KS" id="kFf-ex-nE4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
