@@ -53,7 +53,6 @@
     self.datePicker2.hidden = NO;
     self.datePicker2.timeZone = [NSTimeZone localTimeZone];
     
-    
     self.datePicker2.datePickerMode = UIDatePickerModeDateAndTime;
     
 }
