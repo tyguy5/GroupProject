@@ -30,6 +30,12 @@
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     
     [[UINavigationBar appearance] setTranslucent:NO];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor],
+                                                           NSForegroundColorAttributeName,
+                                                           nil]];
+
 //    
 //    [[UIView appearance] setBackgroundColor:[UIColor colorWithRed:222/255.0 green:214/255.0 blue:189/255.0 alpha:1]];
 //
