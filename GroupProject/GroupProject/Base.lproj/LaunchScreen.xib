@@ -10,47 +10,49 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RememberIt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyu-lZ-e58">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-an-8BN">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeoMinder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyu-lZ-e58">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.46274509803921571" green="0.38039215686274508" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-an-8BN">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="VFR-an-8BN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="136" id="AwE-aF-9Ju"/>
                 <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="Tyu-lZ-e58" secondAttribute="centerX" id="GUw-ZH-5AT"/>
                 <constraint firstItem="VFR-an-8BN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eyU-Mk-iV2"/>
-                <constraint firstItem="Tyu-lZ-e58" firstAttribute="top" secondItem="VFR-an-8BN" secondAttribute="bottom" constant="16" id="kuM-XM-RST"/>
+                <constraint firstItem="Tyu-lZ-e58" firstAttribute="top" secondItem="VFR-an-8BN" secondAttribute="bottom" constant="16" id="kuM-XM-RST">
+                    <variation key="widthClass=compact" constant="8"/>
+                </constraint>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="Tyu-lZ-e58"/>
                     <exclude reference="VFR-an-8BN"/>
+                    <exclude reference="Tyu-lZ-e58"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="kuM-XM-RST"/>
                     <exclude reference="AwE-aF-9Ju"/>
                     <exclude reference="GUw-ZH-5AT"/>
                     <exclude reference="eyU-Mk-iV2"/>
-                    <exclude reference="kuM-XM-RST"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
-                    <include reference="Tyu-lZ-e58"/>
                     <include reference="VFR-an-8BN"/>
+                    <include reference="Tyu-lZ-e58"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="kuM-XM-RST"/>
                     <include reference="AwE-aF-9Ju"/>
                     <include reference="GUw-ZH-5AT"/>
                     <include reference="eyU-Mk-iV2"/>
-                    <include reference="kuM-XM-RST"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>

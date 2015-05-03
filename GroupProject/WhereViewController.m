@@ -34,6 +34,9 @@
     [self.mapView setRegion:region animated:YES];
     
 }
+- (IBAction)whereViewDone:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
