@@ -303,9 +303,13 @@
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="trailing" secondItem="wEB-6K-UCb" secondAttribute="trailing" id="kvv-K8-X0m"/>
                             <constraint firstItem="wEB-6K-UCb" firstAttribute="leading" secondItem="omO-8C-Thb" secondAttribute="leading" id="ma4-cs-B9l"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="top" secondItem="RqD-Il-XM1" secondAttribute="bottom" constant="13" id="nEF-Pn-Jjj"/>
-                            <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="28" id="pgZ-kA-u0T"/>
+                            <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="28" id="pgZ-kA-u0T">
+                                <variation key="widthClass=compact" constant="57"/>
+                            </constraint>
                             <constraint firstItem="hUf-Rw-BrB" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leading" id="ppV-31-AoX"/>
-                            <constraint firstItem="6lV-8B-x1a" firstAttribute="top" secondItem="D9u-FZ-LD1" secondAttribute="bottom" constant="39" id="w2W-5o-vlW"/>
+                            <constraint firstItem="6lV-8B-x1a" firstAttribute="top" secondItem="D9u-FZ-LD1" secondAttribute="bottom" constant="39" id="w2W-5o-vlW">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
