@@ -41,6 +41,8 @@
     
     self.searchResultsTableView.hidden = YES;
     
+    self.radiusTextField.delegate = self;
+    
     
     MKUserLocation *userLocation = self.mapView.userLocation;
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
