@@ -10,6 +10,28 @@
 
 @implementation GeoFence
 
+-(void)addCurrentLocation:(id)sender {
+    
+    _didStartMonitoringRegion = NO;
+    
+    [self.locationManager startUpdatingLocation];
+    
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    if (locations && [locations count] && !_didStartMonitoringRegion) {
+    
+    CLLocation *location = [locations objectAtIndex:0];
+    
+    CLCircularRegion *fence = [[CLCircularRegion alloc] initWithCenter:[location coordinate] radius:250.0 identifier:[[NSUUID UUID] UUIDString]];
+    
+    [self.locationManager startMonitoringForRegion:fence];
+    [self.locationManager stopUpdatingLocation];
+    
+    }
+    
+}
+
 -(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
     //NSLog(@"Welcome to %@", region.identifier);
 }
