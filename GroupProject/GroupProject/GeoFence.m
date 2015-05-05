@@ -25,6 +25,10 @@
     
     CLCircularRegion *fence = [[CLCircularRegion alloc] initWithCenter:[location coordinate] radius:250.0 identifier:[[NSUUID UUID] UUIDString]];
     
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager requestWhenInUseAuthorization];
+        }
     [self.locationManager startMonitoringForRegion:fence];
     [self.locationManager stopUpdatingLocation];
     
@@ -32,16 +36,16 @@
     
 }
 
--(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+-(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLCircularRegion *)region {
     //NSLog(@"Welcome to %@", region.identifier);
 }
 
 
--(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
+-(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLCircularRegion *)region {
     //NSLog(@"Bye bye");
 }
 
--(void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
+-(void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLCircularRegion *)region {
     //NSLog(@"Now monitoring for %@", region.identifier);
     
     //set desired accuracy to best
