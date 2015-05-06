@@ -51,6 +51,22 @@
     
 }
 
+- (void) remindAtStartTime {
+    NSDate *alertTime = self.datePicker.date;
+    
+    UILocalNotification *localNotification = [UILocalNotification new];
+    if (localNotification) {
+        localNotification.fireDate = alertTime;
+        localNotification.timeZone = [NSTimeZone defaultTimeZone];
+        localNotification.repeatInterval = 0;
+        localNotification.alertBody = @"You picked this time you fool! Go set a geofence";
+        localNotification.applicationIconBadgeNumber = 1;
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    }
+    
+}
+
 
 
 - (IBAction)saveButtonTapped:(id)sender {

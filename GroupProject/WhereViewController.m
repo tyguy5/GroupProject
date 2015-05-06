@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UISearchController *searchController;
 @property (weak, nonatomic) IBOutlet UITableView *searchResultsTableView;
+@property (strong, nonatomic) NSDate *locationDate;
 
 
 @end
@@ -51,6 +52,14 @@
     
 }
 
+#pragma mark - Notification
+
+-(void) remindMeWhere {
+    NSDate *alertTime = self.locationDate;
+    
+    UILocalNotification *localNotification = [UILocalNotification new];
+    
+}
 
 #pragma mark - Search methods
 

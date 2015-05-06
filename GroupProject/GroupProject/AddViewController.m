@@ -9,6 +9,7 @@
 #import "AddViewController.h"
 #import "EntryController.h"
 #import "WhenViewController.h"
+#import "AppDelegate.h"
 
 static NSString *const setTimeSegue = @"setTime";
 static NSString *const setLocationSeque = @"setLocation";
