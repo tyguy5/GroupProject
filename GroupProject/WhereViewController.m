@@ -7,6 +7,7 @@
 //
 
 #import "WhereViewController.h"
+#import "EntryController.h"
 
 @import MapKit;
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UISearchController *searchController;
 @property (weak, nonatomic) IBOutlet UITableView *searchResultsTableView;
 @property (strong, nonatomic) NSDate *locationDate;
+@property (strong, nonatomic) NSString *titlePassedIntoNotification;
 
 
 @end
@@ -58,7 +60,14 @@
     NSDate *alertTime = self.locationDate;
     
     UILocalNotification *localNotification = [UILocalNotification new];
-    
+    if (localNotification) {
+        localNotification.fireDate = alertTime;
+        localNotification.timeZone = [NSTimeZone defaultTimeZone];
+        localNotification.repeatInterval = 0;
+        localNotification.alertBody = @"You've entered the area selected! Don't forget to buy %@", self.titlePassedIntoNotification;
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    }
 }
 
 #pragma mark - Search methods
