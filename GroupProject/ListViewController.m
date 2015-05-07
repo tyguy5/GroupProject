@@ -9,6 +9,7 @@
 #import "ListViewController.h"
 #import "AddViewController.h"
 #import "EntryController.h"
+#import "ListViewDataSource.h"
 @interface ListViewController () <UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -61,10 +62,6 @@
 
 #pragma mark - table view delegate methods
 
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-}
 
 
 /*
