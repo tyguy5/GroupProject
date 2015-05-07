@@ -819,22 +819,15 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="To-Do List" id="0i9-UR-aLS"/>
+                                <navigationItem title="To-Do List" id="0i9-UR-aLS">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="0aL-kd-jF4">
+                                        <connections>
+                                            <segue destination="uRP-AS-2KS" kind="presentation" id="NrK-e5-hAl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
                             </items>
                         </navigationBar>
-                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="h6Z-H6-b15">
-                            <rect key="frame" x="0.0" y="110" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            <items>
-                                <barButtonItem style="plain" systemItem="flexibleSpace" id="IcX-gg-rFR"/>
-                                <barButtonItem image="Add" id="Gmv-d9-8Bq">
-                                    <connections>
-                                        <segue destination="uRP-AS-2KS" kind="presentation" id="KVB-16-82t"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem style="plain" systemItem="flexibleSpace" id="16h-W7-CWU"/>
-                            </items>
-                        </toolbar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" id="gRm-ja-yE3">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -863,13 +856,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Add" width="13" height="13"/>
         <image name="TabBarScreenshot" width="134" height="17"/>
         <image name="WhenView" width="170" height="170"/>
         <image name="WhereView" width="170" height="170"/>
         <image name="popover" width="73" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q7v-u7-a14"/>
+        <segue reference="NrK-e5-hAl"/>
     </inferredMetricsTieBreakers>
 </document>
