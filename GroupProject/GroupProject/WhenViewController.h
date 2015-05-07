@@ -12,6 +12,8 @@
 @interface WhenViewController : UIViewController <UIPickerViewDelegate>
 
 @property (nonatomic, strong) Entry *entry;
+@property (nonatomic, strong) NSDate *startingDate;
+@property (nonatomic, strong) NSDate *endingDate;
 
 
 @end

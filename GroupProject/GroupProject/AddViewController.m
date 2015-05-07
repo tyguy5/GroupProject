@@ -17,6 +17,7 @@ static NSString *const setLocationSeque = @"setLocation";
 @interface AddViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 
 @end
@@ -24,6 +25,7 @@ static NSString *const setLocationSeque = @"setLocation";
 @implementation AddViewController
 - (IBAction)addViewDone:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+   // [[EntryController sharedInstance]createEntryWithTitle:self.titleTextField.text];
 }
 
 - (void)viewDidLoad {
@@ -39,16 +41,18 @@ static NSString *const setLocationSeque = @"setLocation";
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
-    
     return YES;
 }
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    self.doneButton.enabled = NO;
+}
 -(void)textFieldDidEndEditing:(UITextField *)textField {
-    self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text];
+   self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text];
+    self.doneButton.enabled = YES;
 }
 
 -(void)updateWithEntry:(Entry *)entry {
     self.titleTextField.text = entry.titleOfEntry;
-    
 }
 
 #pragma mark - Navigation

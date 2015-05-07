@@ -8,15 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "Entry.h"
+#import "WhenViewController.h"
 
 @interface EntryController : NSObject
 
 @property (strong, nonatomic, readonly) NSArray *entries;
+@property (copy, nonatomic) NSDate *startingDate;
+@property (copy, nonatomic) NSDate *endingDate;
 
 + (EntryController *) sharedInstance;
 -(void) save;
 - (Entry *) createEntryWithTitle: (NSString *) title;
-- (Entry *) createTimeStamp: (NSDate *) date;
+- (Entry *) createTimeStamp: (NSDate *) date andEndTime: (NSDate *)endDate;
 -(void) deleteEntry:(Entry *) entry;
 
 

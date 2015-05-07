@@ -23,6 +23,10 @@
 @implementation WhenViewController
 - (IBAction)whenViewDone:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date andEndTime:self.datePicker2.date];
+//    self.datePicker.date = self.startingDate;
+//    self.datePicker2.date = self.endingDate;
+
 }
 
 - (void)viewDidLoad {
@@ -72,10 +76,10 @@
 - (IBAction)saveButtonTapped:(id)sender {
     
     //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
-    self.entry.timestamp = self.datePicker.date;
-    self.entry.endTimeStamp = self.datePicker2.date;
+//    self.entry.timestamp = self.datePicker.date;
+//    self.entry.endTimeStamp = self.datePicker2.date;
     
-    [[EntryController sharedInstance] save];
+//    [[EntryController sharedInstance] createTimeStamp:self.datePicker.date andEndTime:self.datePicker2.date];
     
 }
 
