@@ -9,7 +9,8 @@
 #import "ListViewController.h"
 #import "AddViewController.h"
 #import "EntryController.h"
-@interface ListViewController ()
+#import "ListViewDataSource.h"
+@interface ListViewController () <UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -56,6 +57,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+#pragma mark - table view delegate methods
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

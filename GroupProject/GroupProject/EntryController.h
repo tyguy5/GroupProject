@@ -17,6 +17,7 @@
 -(void) save;
 - (Entry *) createEntryWithTitle: (NSString *) title;
 - (Entry *) createTimeStamp: (NSDate *) date;
+-(void) deleteEntry:(Entry *) entry;
 
 
 @end
