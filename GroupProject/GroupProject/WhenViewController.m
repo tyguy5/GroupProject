@@ -12,21 +12,14 @@
 
 
 @interface WhenViewController ()
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
-
-
-
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
 @implementation WhenViewController
 - (IBAction)whenViewDone:(id)sender {
+    [self.delegate didSelectedDates:self.datePicker.date andsecondDate:self.datePicker2.date];
     [self dismissViewControllerAnimated:YES completion:nil];
-    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date andEndTime:self.datePicker2.date];
-//    self.datePicker.date = self.startingDate;
-//    self.datePicker2.date = self.endingDate;
-
 }
 
 - (void)viewDidLoad {

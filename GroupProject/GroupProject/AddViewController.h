@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Entry.h"
+#import "WhenViewController.h"
 
-@interface AddViewController : UIViewController
+
+@interface AddViewController : UIViewController <WhenViewControllerDelegate>
 
 @property (strong, nonatomic) Entry *entry;
 

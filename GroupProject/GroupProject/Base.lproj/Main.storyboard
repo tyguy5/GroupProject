@@ -473,9 +473,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Set Time Range" id="hZ0-Q4-0B2">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lvT-zZ-YMR">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dmf-gl-xD4">
                                             <connections>
-                                                <action selector="whenViewDone:" destination="oXA-Cd-Fn8" id="NnP-7b-5Tm"/>
+                                                <action selector="whenViewDone:" destination="oXA-Cd-Fn8" id="ZPU-sG-tc6"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -599,6 +599,7 @@
                     <connections>
                         <outlet property="datePicker" destination="2bo-kr-UGv" id="xMH-EL-MTt"/>
                         <outlet property="datePicker2" destination="PqO-vf-Iri" id="LLy-Kc-zLY"/>
+                        <outlet property="doneButton" destination="dmf-gl-xD4" id="tLo-0U-O4T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-LW-2eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -764,7 +765,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Entry" id="zqX-x4-GC1"/>
                     <connections>
-                        <outlet property="doneButton" destination="Wu7-NP-7l6" id="svN-F3-qKX"/>
                         <outlet property="titleTextField" destination="wiQ-gx-Opp" id="b2S-KM-hjJ"/>
                     </connections>
                 </viewController>

@@ -8,16 +8,17 @@
 
 #import "AddViewController.h"
 #import "EntryController.h"
-#import "WhenViewController.h"
 #import "AppDelegate.h"
 
 static NSString *const setTimeSegue = @"setTime";
 static NSString *const setLocationSeque = @"setLocation";
 
-@interface AddViewController () <UITextFieldDelegate>
+@interface AddViewController () <UITextFieldDelegate, WhenViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+@property (strong, nonatomic) NSDate *firstDatePicker;
+@property (strong, nonatomic) NSDate *secondDatePicker;
 
 
 @end
@@ -25,7 +26,16 @@ static NSString *const setLocationSeque = @"setLocation";
 @implementation AddViewController
 - (IBAction)addViewDone:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
-   // [[EntryController sharedInstance]createEntryWithTitle:self.titleTextField.text];
+    if (self.firstDatePicker == nil || self.secondDatePicker == nil) {
+        [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text createTimeStamp:nil andEndTime:nil];
+    } else {
+    [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text createTimeStamp:self.firstDatePicker andEndTime:self.secondDatePicker];
+    }
+  }
+
+- (void)didSelectedDates:(NSDate *)firstDate andsecondDate:(NSDate *)secondDate {
+    firstDate = self.firstDatePicker;
+    secondDate = self.secondDatePicker;
 }
 
 - (void)viewDidLoad {
@@ -47,8 +57,8 @@ static NSString *const setLocationSeque = @"setLocation";
     self.doneButton.enabled = NO;
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField {
-   self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text];
-    self.doneButton.enabled = YES;
+  // self.entry = [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text];
+   self.doneButton.enabled = YES;
 }
 
 -(void)updateWithEntry:(Entry *)entry {

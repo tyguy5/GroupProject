@@ -34,7 +34,7 @@
         prettyEndDate = @"";
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ till %@", entry.titleOfEntry, prettyDate, prettyEndDate];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@", entry.titleOfEntry, prettyDate, prettyEndDate];
     
     return cell;
 }

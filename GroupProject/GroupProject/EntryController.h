@@ -18,8 +18,9 @@
 
 + (EntryController *) sharedInstance;
 -(void) save;
-- (Entry *) createEntryWithTitle: (NSString *) title;
-- (Entry *) createTimeStamp: (NSDate *) date andEndTime: (NSDate *)endDate;
+//- (Entry *) createEntryWithTitle: (NSString *) title;
+//- (Entry *) createTimeStamp: (NSDate *) date andEndTime: (NSDate *)endDate;
+- (Entry *) createEntryWithTitle: (NSString *) title createTimeStamp: (NSDate *) date andEndTime: (NSDate *)endDate;
 -(void) deleteEntry:(Entry *) entry;
 
 
