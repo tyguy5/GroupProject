@@ -9,6 +9,8 @@
 #import "WhenViewController.h"
 #import "EntryController.h"
 #import "Stack.h"
+#import "AddViewController.h"
+
 
 
 @interface WhenViewController ()
@@ -17,10 +19,13 @@
 @end
 
 @implementation WhenViewController
+
+@synthesize delegate;
+
 - (IBAction)whenViewDone:(id)sender {
     [self.delegate didSelectedDates:self.datePicker.date andsecondDate:self.datePicker2.date];
     [self dismissViewControllerAnimated:YES completion:nil];
-}
+    }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,15 +43,18 @@
     
     self.datePicker.hidden = NO;
     self.datePicker2.hidden = YES;
-    
+    self.doneButton.enabled = NO;
 }
 
 - (IBAction)setEndTimeButtonTapped:(id)sender {
     
     self.datePicker.hidden = NO;
     self.datePicker2.hidden = NO;
+    self.doneButton.enabled = YES;
     
 }
+
+
 
 - (void) remindAtStartTime {
     NSDate *alertTime = self.datePicker.date;
@@ -61,18 +69,6 @@
         
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     }
-    
-}
-
-
-
-- (IBAction)saveButtonTapped:(id)sender {
-    
-    //    self.entry = [[EntryController sharedInstance] createTimeStamp:self.datePicker.date];
-//    self.entry.timestamp = self.datePicker.date;
-//    self.entry.endTimeStamp = self.datePicker2.date;
-    
-//    [[EntryController sharedInstance] createTimeStamp:self.datePicker.date andEndTime:self.datePicker2.date];
     
 }
 

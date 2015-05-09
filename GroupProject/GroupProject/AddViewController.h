@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Entry.h"
-#import "WhenViewController.h"
 
 
-@interface AddViewController : UIViewController <WhenViewControllerDelegate>
+@interface AddViewController : UIViewController 
 
 @property (strong, nonatomic) Entry *entry;
+
+- (void)passingThroughDates:dates;
 
 @end

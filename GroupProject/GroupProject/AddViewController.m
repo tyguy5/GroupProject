@@ -9,6 +9,8 @@
 #import "AddViewController.h"
 #import "EntryController.h"
 #import "AppDelegate.h"
+#import "WhenViewController.h"
+
 
 static NSString *const setTimeSegue = @"setTime";
 static NSString *const setLocationSeque = @"setLocation";
@@ -20,12 +22,25 @@ static NSString *const setLocationSeque = @"setLocation";
 @property (strong, nonatomic) NSDate *firstDatePicker;
 @property (strong, nonatomic) NSDate *secondDatePicker;
 
-
 @end
 
 @implementation AddViewController
+
+#pragma mark - Custom Delegate
+- (void)didSelectedDates:(NSDate *)firstDate andsecondDate:(NSDate *)secondDate{
+    self.firstDatePicker = firstDate;
+    self.secondDatePicker = secondDate;
+}
+
+
+
 - (IBAction)addViewDone:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.entry) {
+        // TODO: Update the entry
+    } else {
+        // TODO: Create a new entry
+    }
     if (self.firstDatePicker == nil || self.secondDatePicker == nil) {
         [[EntryController sharedInstance] createEntryWithTitle:self.titleTextField.text createTimeStamp:nil andEndTime:nil];
     } else {
@@ -33,16 +48,16 @@ static NSString *const setLocationSeque = @"setLocation";
     }
   }
 
-- (void)didSelectedDates:(NSDate *)firstDate andsecondDate:(NSDate *)secondDate {
-    firstDate = self.firstDatePicker;
-    secondDate = self.secondDatePicker;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self updateWithEntry:self.entry];
 }
+-(void)viewDidAppear:(BOOL)animated {
+
+
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -69,9 +84,15 @@ static NSString *const setLocationSeque = @"setLocation";
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
     if ([segue.identifier isEqualToString:setTimeSegue]) {
         WhenViewController *whenVC = segue.destinationViewController;
-        whenVC.entry = self.entry;
+        if (self.entry) {
+            // TODO: Set up date pickers to display current dates
+            whenVC.datePicker.date = self.entry.timestamp;
+            whenVC.datePicker2.date = self.entry.endTimeStamp;
+        }
+        whenVC.delegate = self;
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
