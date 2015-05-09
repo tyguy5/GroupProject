@@ -226,25 +226,9 @@
 
 
 - (IBAction)distanceSlide:(UISlider *)sender {
-    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %i miles", (int)sender.value];
-//    
-//        if(sender.value<200)
-//            [sender setValue:200];
-//        else{
-//            if ((int)sender.value % 100>50){
-//    
-//                [sender setValue:sender.value+(100-(int)sender.value % 100) ];
-//    
-//            }
-//            else{
-//    
-//                [sender setValue:sender.value-((int)sender.value % 100) ];
-//    
-//            }
-//    
-            [self setNewRadius];
-//
-//        }
+    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %d miles", (int)sender.value];
+
+    [self setNewRadius];
     
 }
 
