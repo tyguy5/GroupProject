@@ -38,7 +38,6 @@
     
     [[UISegmentedControl appearance] setTintColor:[UIColor colorWithRed:21/255.0 green:158/255.0 blue:123/255.0 alpha:1]];
     
-    [[UISegmentedControl appearance] setSe]
     
 
 //    
