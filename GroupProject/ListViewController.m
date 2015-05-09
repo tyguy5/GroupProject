@@ -46,6 +46,8 @@
         
         Entry *entry = [EntryController sharedInstance].entries[indexPath.row];
         
+        viewController.navigationItem.rightBarButtonItem = nil;
+        
         viewController.entry = entry;
         
     }

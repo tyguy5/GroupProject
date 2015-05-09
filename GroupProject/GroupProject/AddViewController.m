@@ -30,6 +30,10 @@ static NSString *const setLocationSeque = @"setLocation";
 - (void)didSelectedDates:(NSDate *)firstDate andsecondDate:(NSDate *)secondDate{
     self.firstDatePicker = firstDate;
     self.secondDatePicker = secondDate;
+    
+    if (self.entry) {
+        // TODO: Update the entry with these dates
+    }
 }
 
 

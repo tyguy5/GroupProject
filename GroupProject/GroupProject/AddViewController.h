@@ -14,6 +14,4 @@
 
 @property (strong, nonatomic) Entry *entry;
 
-- (void)passingThroughDates:dates;
-
 @end
