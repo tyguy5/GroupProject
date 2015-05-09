@@ -21,10 +21,21 @@
     [formatter setDateStyle:NSDateFormatterShortStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
     
-    NSDate *now = entry.timestamp;
-    NSString *prettyDate = [formatter stringFromDate:now];
+    NSDate *start = entry.timestamp;
+    NSString *prettyDate = [formatter stringFromDate:start];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", entry.titleOfEntry, prettyDate];
+    NSDate *end = entry.endTimeStamp;
+    NSString *prettyEndDate = [formatter stringFromDate:end];
+    
+    if (prettyDate == nil) {
+        prettyDate = @"";
+    }
+    if (prettyEndDate == nil) {
+        prettyEndDate = @"";
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", entry.titleOfEntry];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ to %@", prettyDate, prettyEndDate];
     
     return cell;
 }

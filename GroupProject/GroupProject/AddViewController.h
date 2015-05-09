@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Entry.h"
 
-@interface AddViewController : UIViewController
+
+@interface AddViewController : UIViewController 
 
 @property (strong, nonatomic) Entry *entry;
 

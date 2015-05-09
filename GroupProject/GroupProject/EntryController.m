@@ -22,23 +22,18 @@
 
 #pragma mark - Create
 
-- (Entry *) createEntryWithTitle: (NSString *) title {
+- (Entry *) createEntryWithTitle: (NSString *) title createTimeStamp: (NSDate *) date andEndTime: (NSDate *)endDate {
     Entry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
     entry.titleOfEntry = title;
-   // entry.timestamp = [NSDate date];
+    entry.timestamp = date;
+    entry.endTimeStamp = endDate;
     
-//    [self saveToPersistentStorage];
+    [self saveToPersistentStorage];
     
     return entry;
     
 }
 
-- (Entry *) createTimeStamp: (NSDate *) date {
-    Entry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
-    entry.timestamp = date;
-    [self saveToPersistentStorage];
-    return entry;
-}
 
 #pragma mark - Read
 

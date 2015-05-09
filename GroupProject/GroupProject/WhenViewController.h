@@ -9,9 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "Entry.h"
 
+
+@protocol WhenViewControllerDelegate;
+
 @interface WhenViewController : UIViewController <UIPickerViewDelegate>
 
-@property (nonatomic, strong) Entry *entry;
+@property (nonatomic, strong) id <WhenViewControllerDelegate>delegate;
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker2;
+
+@end
+
+@protocol WhenViewControllerDelegate <NSObject>
+
+- (void) didSelectedDates: (NSDate *)firstDate andsecondDate: (NSDate *)secondDate;
 
 @end
