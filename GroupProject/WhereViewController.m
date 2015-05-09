@@ -57,7 +57,9 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
     
     [self.mapView setRegion:region animated:YES];
-    
+ 
+    [self.distanceSlider addTarget:self action:@selector(distanceSlide:) forControlEvents:UIControlEventValueChanged];
+
 }
 
 
@@ -115,6 +117,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return [results.mapItems count];
+    
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -221,29 +224,30 @@
     
 }
 
+
 - (IBAction)distanceSlide:(UISlider *)sender {
-    
-    
-    
-    if(sender.value<200)
-        [sender setValue:200];
-    else{
-        if ((int)sender.value % 100>50){
-            
-            [sender setValue:sender.value+(100-(int)sender.value % 100) ];
-            
-        }
-        else{
-            
-            [sender setValue:sender.value-((int)sender.value % 100) ];
-            
-        }
-        
-        [self setNewRadius];
-        
-    }
+    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %i miles", (int)sender.value];
+//    
+//        if(sender.value<200)
+//            [sender setValue:200];
+//        else{
+//            if ((int)sender.value % 100>50){
+//    
+//                [sender setValue:sender.value+(100-(int)sender.value % 100) ];
+//    
+//            }
+//            else{
+//    
+//                [sender setValue:sender.value-((int)sender.value % 100) ];
+//    
+//            }
+//    
+            [self setNewRadius];
+//
+//        }
     
 }
+
 
 -(void)setNewRadius{
     
