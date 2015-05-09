@@ -22,10 +22,9 @@
     
     [AppearanceController initializeAppearanceDefaults];
     
-    UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (localNotification) {
-        application.applicationIconBadgeNumber = 0;
-    }
+    CLLocationManager *manager = [[CLLocationManager alloc]init];
+    manager.delegate = self;
+    
     
     return YES;
 }
@@ -46,20 +45,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
-    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
-        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound) categories:nil]];
-        [application registerForRemoteNotifications];
-    }
-    else {
-        [application registerForRemoteNotificationTypes:(UIRemoteNotificationType) (UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert)];
-    }
-
-}
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Don't forget!" message:notification.alertBody preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleDefault handler:nil]];
-    [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
