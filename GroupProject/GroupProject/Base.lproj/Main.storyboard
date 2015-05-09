@@ -431,7 +431,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Where" id="jZk-P9-Ob7"/>
                     <connections>
+                        <outlet property="distanceSlider" destination="65I-Oa-MUj" id="4rM-WR-gui"/>
+                        <outlet property="fenceType" destination="D9u-FZ-LD1" id="8PH-OW-RF7"/>
                         <outlet property="mapView" destination="omO-8C-Thb" id="m92-mv-D2f"/>
+                        <outlet property="radiusLabel" destination="9bF-Sc-iDf" id="CvO-GA-p72"/>
                         <outlet property="searchBar" destination="bGl-pI-L6u" id="PIa-wh-eSE"/>
                         <outlet property="searchDisplayController" destination="fu2-8I-boi" id="8Sg-Ql-I1h"/>
                         <outlet property="searchResultsTableView" destination="2HC-zS-V9P" id="yqE-5L-oh7"/>

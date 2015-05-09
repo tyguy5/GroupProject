@@ -14,7 +14,7 @@
 
 
 @interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate, UISearchDisplayDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UISlider *distanceSlider;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *searchResultsTableView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *fenceType;
+@property (weak, nonatomic) IBOutlet UILabel *radiusLabel;
 
 
 @end
@@ -171,11 +172,6 @@
 - (IBAction)EntryExitButtonTapped:(id)sender {
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    
-    return YES;
-}
 
 #pragma mark Set geofence
 #pragma mark Set Geofence
