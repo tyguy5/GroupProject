@@ -20,7 +20,8 @@
 		CF2C22AA1AF589F100D28EAB /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2C22A91AF589F100D28EAB /* Entry.m */; };
 		CF7A34681AF2C8D700F22F10 /* ListViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A34671AF2C8D700F22F10 /* ListViewDataSource.m */; };
 		CF7A346E1AF2CB0200F22F10 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A346D1AF2CB0200F22F10 /* ListViewController.m */; };
-		CF7A34F11AF54A5500F22F10 /* GeoFence.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7A34F01AF54A5500F22F10 /* GeoFence.m */; };
+		CF90D6981AFD71D000898AC0 /* Fence.m in Sources */ = {isa = PBXBuildFile; fileRef = CF90D6971AFD71D000898AC0 /* Fence.m */; };
+		CF90D69B1AFD7E8F00898AC0 /* Pin.m in Sources */ = {isa = PBXBuildFile; fileRef = CF90D69A1AFD7E8F00898AC0 /* Pin.m */; };
 		CFC1F33A1AEFFAA800B1EABA /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F3391AEFFAA800B1EABA /* AppearanceController.m */; };
 		CFC1F33E1AF085A900B1EABA /* WhenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F33D1AF085A900B1EABA /* WhenViewController.m */; };
 		CFC1F3411AF0958B00B1EABA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1F3401AF0958B00B1EABA /* AboutViewController.m */; };
@@ -66,8 +67,10 @@
 		CF7A34671AF2C8D700F22F10 /* ListViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewDataSource.m; sourceTree = "<group>"; };
 		CF7A346C1AF2CB0200F22F10 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = ../ListViewController.h; sourceTree = "<group>"; };
 		CF7A346D1AF2CB0200F22F10 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = ../ListViewController.m; sourceTree = "<group>"; };
-		CF7A34EF1AF54A5500F22F10 /* GeoFence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFence.h; sourceTree = "<group>"; };
-		CF7A34F01AF54A5500F22F10 /* GeoFence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFence.m; sourceTree = "<group>"; };
+		CF90D6961AFD71D000898AC0 /* Fence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fence.h; path = ../Fence.h; sourceTree = "<group>"; };
+		CF90D6971AFD71D000898AC0 /* Fence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fence.m; path = ../Fence.m; sourceTree = "<group>"; };
+		CF90D6991AFD7E8F00898AC0 /* Pin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pin.h; path = ../Pin.h; sourceTree = "<group>"; };
+		CF90D69A1AFD7E8F00898AC0 /* Pin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pin.m; path = ../Pin.m; sourceTree = "<group>"; };
 		CFC1F3381AEFFAA800B1EABA /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceController.h; sourceTree = "<group>"; };
 		CFC1F3391AEFFAA800B1EABA /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceController.m; sourceTree = "<group>"; };
 		CFC1F33C1AF085A900B1EABA /* WhenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhenViewController.h; sourceTree = "<group>"; };
@@ -124,8 +127,10 @@
 				CFDF3CEA1AEDFCA20013FE4C /* AddViewController.m */,
 				CFC1F33C1AF085A900B1EABA /* WhenViewController.h */,
 				CFC1F33D1AF085A900B1EABA /* WhenViewController.m */,
-				CF7A34EF1AF54A5500F22F10 /* GeoFence.h */,
-				CF7A34F01AF54A5500F22F10 /* GeoFence.m */,
+				CF90D6961AFD71D000898AC0 /* Fence.h */,
+				CF90D6971AFD71D000898AC0 /* Fence.m */,
+				CF90D6991AFD7E8F00898AC0 /* Pin.h */,
+				CF90D69A1AFD7E8F00898AC0 /* Pin.m */,
 				CFC1F4451AF42E8C00B1EABA /* WhereViewController.h */,
 				CFC1F4461AF42E8C00B1EABA /* WhereViewController.m */,
 			);
@@ -348,12 +353,13 @@
 				CFC1F33A1AEFFAA800B1EABA /* AppearanceController.m in Sources */,
 				2F536EA51AE9EB7A00D7E696 /* AppDelegate.m in Sources */,
 				CFDF3CEB1AEDFCA20013FE4C /* AddViewController.m in Sources */,
-				CF7A34F11AF54A5500F22F10 /* GeoFence.m in Sources */,
 				2CFAE0C21AEC19CC00920265 /* EntryController.m in Sources */,
 				CFDF3CE21AEDED3E0013FE4C /* TabBarController.m in Sources */,
 				CFC1F33E1AF085A900B1EABA /* WhenViewController.m in Sources */,
+				CF90D6981AFD71D000898AC0 /* Fence.m in Sources */,
 				CFDF3CE81AEDF7F00013FE4C /* WelcomeViewController.m in Sources */,
 				CF2C22AA1AF589F100D28EAB /* Entry.m in Sources */,
+				CF90D69B1AFD7E8F00898AC0 /* Pin.m in Sources */,
 				CF7A346E1AF2CB0200F22F10 /* ListViewController.m in Sources */,
 				CFC1F4471AF42E8C00B1EABA /* WhereViewController.m in Sources */,
 				CFC1F3411AF0958B00B1EABA /* AboutViewController.m in Sources */,

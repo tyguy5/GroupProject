@@ -22,6 +22,10 @@
     
     [AppearanceController initializeAppearanceDefaults];
     
+    CLLocationManager *manager = [[CLLocationManager alloc]init];
+    manager.delegate = self;
+    
+    
     return YES;
 }
 

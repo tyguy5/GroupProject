@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GeoFence.h"
 
 @interface WhereViewController : UIViewController
 
