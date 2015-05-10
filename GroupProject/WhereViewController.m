@@ -215,8 +215,8 @@
 -(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
     
     MKCircleRenderer *circleview = [[MKCircleRenderer alloc]initWithOverlay:overlay];
-    circleview.fillColor=[[UIColor blueColor]colorWithAlphaComponent:0.1];
-    circleview.strokeColor=[UIColor blueColor];
+    circleview.fillColor=[UIColor colorWithRed:0/255.0 green:91/255.0 blue:255/255.0 alpha:0.1];
+    circleview.strokeColor=[UIColor colorWithRed:0/255.0 green:91/255.0 blue:255/255.0 alpha:1];
     
     circleview.lineWidth=1.0;
     
