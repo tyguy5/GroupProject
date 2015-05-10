@@ -68,6 +68,13 @@
                                     <action selector="distanceSlide:" destination="WXN-4Q-sp0" eventType="valueChanged" id="rRU-en-4uu"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap and hold on map to drop pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSC-vL-iIS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -81,6 +88,7 @@
                             <constraint firstAttribute="centerX" secondItem="9bF-Sc-iDf" secondAttribute="centerX" id="JQU-zS-grh"/>
                             <constraint firstAttribute="centerX" secondItem="VFG-uM-hZM" secondAttribute="centerX" id="NJR-4Q-Loy"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="NNA-uC-TQM"/>
+                            <constraint firstItem="JSC-vL-iIS" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="QId-oQ-Kby"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="UKm-eK-vn2"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="XXH-wX-Wv1"/>
                             <constraint firstItem="bGl-pI-L6u" firstAttribute="width" secondItem="AGa-4X-afB" secondAttribute="width" id="Xc2-3V-WmD"/>
@@ -93,10 +101,37 @@
                             <constraint firstItem="D9u-FZ-LD1" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="539" id="k01-xM-eBV"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="kgy-7o-tOH"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="508" id="n7H-yT-7jV"/>
+                            <constraint firstItem="JSC-vL-iIS" firstAttribute="top" secondItem="omO-8C-Thb" secondAttribute="bottom" constant="-32" id="nbz-1b-4tn">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="D9u-FZ-LD1" secondAttribute="centerX" constant="-0.5" id="qf6-xf-Ben"/>
+                            <constraint firstItem="JSC-vL-iIS" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="rv5-2P-5QR"/>
                             <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="15" id="t8e-d4-j6m"/>
+                            <constraint firstItem="omO-8C-Thb" firstAttribute="centerX" secondItem="JSC-vL-iIS" secondAttribute="centerX" id="x3A-Ll-662"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="470" id="yCk-21-Yst"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JSC-vL-iIS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="x3A-Ll-662"/>
+                                <exclude reference="QId-oQ-Kby"/>
+                                <exclude reference="nbz-1b-4tn"/>
+                                <exclude reference="rv5-2P-5QR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JSC-vL-iIS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="x3A-Ll-662"/>
+                                <include reference="QId-oQ-Kby"/>
+                                <include reference="nbz-1b-4tn"/>
+                                <include reference="rv5-2P-5QR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Set location" id="jZk-P9-Ob7">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="4IQ-eB-kki">
