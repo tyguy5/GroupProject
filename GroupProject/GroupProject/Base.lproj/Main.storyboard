@@ -27,7 +27,7 @@
                                 <rect key="frame" x="16" y="287" width="568" height="182"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="182" id="Cwk-CI-kx6"/>
+                                    <constraint firstAttribute="height" constant="300" id="Cwk-CI-kx6"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bIt-fm-9ui" appends="YES" id="Mly-mJ-1nf"/>
@@ -71,7 +71,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bGl-pI-L6u" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="88" id="0Pn-tm-Odr"/>
+                            <constraint firstItem="bGl-pI-L6u" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="45" id="0Pn-tm-Odr"/>
                             <constraint firstItem="k95-rI-LRg" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="5re-SE-Iu4"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="5yO-ak-ePm"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="6Sv-eg-5Cj"/>
@@ -94,8 +94,7 @@
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="kgy-7o-tOH"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="508" id="n7H-yT-7jV"/>
                             <constraint firstAttribute="centerX" secondItem="D9u-FZ-LD1" secondAttribute="centerX" constant="-0.5" id="qf6-xf-Ben"/>
-                            <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="57" id="t8e-d4-j6m"/>
-                            <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="57" id="xFq-5g-bBf"/>
+                            <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="15" id="t8e-d4-j6m"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="470" id="yCk-21-Yst"/>
                         </constraints>
                     </view>
