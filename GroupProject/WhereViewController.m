@@ -215,8 +215,8 @@
 -(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
     
     MKCircleRenderer *circleview = [[MKCircleRenderer alloc]initWithOverlay:overlay];
-    circleview.fillColor=[[UIColor blueColor]colorWithAlphaComponent:0.1];
-    circleview.strokeColor=[UIColor blueColor];
+    circleview.fillColor=[UIColor colorWithRed:0/255.0 green:91/255.0 blue:255/255.0 alpha:0.1];
+    circleview.strokeColor=[UIColor colorWithRed:0/255.0 green:91/255.0 blue:255/255.0 alpha:1];
     
     circleview.lineWidth=1.0;
     
@@ -226,9 +226,26 @@
 
 
 - (IBAction)distanceSlide:(UISlider *)sender {
-    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %d miles", (int)sender.value];
-
-    [self setNewRadius];
+    
+    if(sender.value<200)
+        [sender setValue:200];
+    else{
+        if ((int)sender.value % 100>50){
+            
+            [sender setValue:sender.value+(100-(int)sender.value % 100) ];
+            
+        }
+        else{
+            
+            [sender setValue:sender.value-((int)sender.value % 100) ];
+            
+        }
+        
+        [self setNewRadius];
+        
+    }
+ 
+    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %d meters", (int)sender.value];
     
 }
 
