@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tJV-xj-gv6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tJV-xj-gv6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -50,13 +50,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGl-pI-L6u">
-                                <rect key="frame" x="0.0" y="152" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="WXN-4Q-sp0" id="bov-W3-grI"/>
-                                </connections>
-                            </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-Sc-iDf">
                                 <rect key="frame" x="16" y="494" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -76,27 +69,33 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar clearsContextBeforeDrawing="NO" contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="eBf-Mu-uCH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WXN-4Q-sp0" id="CGa-Fe-6rn"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bGl-pI-L6u" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="45" id="0Pn-tm-Odr"/>
                             <constraint firstItem="k95-rI-LRg" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="5re-SE-Iu4"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="5yO-ak-ePm"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="6Sv-eg-5Cj"/>
                             <constraint firstItem="k95-rI-LRg" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="96s-A5-8dC"/>
                             <constraint firstAttribute="centerX" secondItem="k95-rI-LRg" secondAttribute="centerX" constant="-0.5" id="ApE-Ls-FOZ"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="top" secondItem="omO-8C-Thb" secondAttribute="bottom" constant="25" id="GOn-YF-jqV"/>
+                            <constraint firstAttribute="trailing" secondItem="eBf-Mu-uCH" secondAttribute="trailing" id="HRe-BO-vJ5"/>
                             <constraint firstAttribute="centerX" secondItem="9bF-Sc-iDf" secondAttribute="centerX" id="JQU-zS-grh"/>
                             <constraint firstAttribute="centerX" secondItem="VFG-uM-hZM" secondAttribute="centerX" id="NJR-4Q-Loy"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="NNA-uC-TQM"/>
                             <constraint firstItem="JSC-vL-iIS" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="QId-oQ-Kby"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="UKm-eK-vn2"/>
+                            <constraint firstItem="eBf-Mu-uCH" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leading" id="Vlg-op-06t"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="XXH-wX-Wv1"/>
-                            <constraint firstItem="bGl-pI-L6u" firstAttribute="width" secondItem="AGa-4X-afB" secondAttribute="width" id="Xc2-3V-WmD"/>
                             <constraint firstAttribute="centerX" secondItem="65I-Oa-MUj" secondAttribute="centerX" id="aVq-uL-7Ka"/>
                             <constraint firstAttribute="centerX" secondItem="omO-8C-Thb" secondAttribute="centerX" id="bPD-73-gVp"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="eTu-5a-BOF"/>
-                            <constraint firstAttribute="centerX" secondItem="bGl-pI-L6u" secondAttribute="centerX" id="gQ5-t8-W4q"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="gsf-Pz-gTm"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="430" id="jBe-sc-aK3"/>
                             <constraint firstItem="D9u-FZ-LD1" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="539" id="k01-xM-eBV"/>
@@ -106,31 +105,46 @@
                                 <variation key="widthClass=compact" constant="-16"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="D9u-FZ-LD1" secondAttribute="centerX" constant="-0.5" id="qf6-xf-Ben"/>
+                            <constraint firstAttribute="centerX" secondItem="eBf-Mu-uCH" secondAttribute="centerX" id="rch-2k-54S"/>
                             <constraint firstItem="JSC-vL-iIS" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="rv5-2P-5QR"/>
                             <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="15" id="t8e-d4-j6m"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="centerX" secondItem="JSC-vL-iIS" secondAttribute="centerX" id="x3A-Ll-662"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="eBf-Mu-uCH" secondAttribute="centerXWithinMargins" id="xQi-Ip-YVo"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="470" id="yCk-21-Yst"/>
+                            <constraint firstItem="eBf-Mu-uCH" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="48" id="ywn-1D-yTJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="JSC-vL-iIS"/>
+                                <exclude reference="eBf-Mu-uCH"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="HRe-BO-vJ5"/>
+                                <exclude reference="Vlg-op-06t"/>
+                                <exclude reference="rch-2k-54S"/>
+                                <exclude reference="xQi-Ip-YVo"/>
+                                <exclude reference="ywn-1D-yTJ"/>
+                                <exclude reference="x3A-Ll-662"/>
                                 <exclude reference="QId-oQ-Kby"/>
                                 <exclude reference="nbz-1b-4tn"/>
                                 <exclude reference="rv5-2P-5QR"/>
-                                <exclude reference="x3A-Ll-662"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="JSC-vL-iIS"/>
+                                <include reference="eBf-Mu-uCH"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="HRe-BO-vJ5"/>
+                                <include reference="Vlg-op-06t"/>
+                                <include reference="rch-2k-54S"/>
+                                <include reference="xQi-Ip-YVo"/>
+                                <include reference="ywn-1D-yTJ"/>
+                                <include reference="x3A-Ll-662"/>
                                 <include reference="QId-oQ-Kby"/>
                                 <include reference="nbz-1b-4tn"/>
                                 <include reference="rv5-2P-5QR"/>
-                                <include reference="x3A-Ll-662"/>
                             </mask>
                         </variation>
                     </view>
@@ -146,25 +160,24 @@
                         <outlet property="fenceType" destination="D9u-FZ-LD1" id="8PH-OW-RF7"/>
                         <outlet property="mapView" destination="omO-8C-Thb" id="m92-mv-D2f"/>
                         <outlet property="radiusLabel" destination="9bF-Sc-iDf" id="CvO-GA-p72"/>
-                        <outlet property="searchBar" destination="bGl-pI-L6u" id="PIa-wh-eSE"/>
-                        <outlet property="searchDisplayController" destination="fu2-8I-boi" id="8Sg-Ql-I1h"/>
+                        <outlet property="searchBar" destination="eBf-Mu-uCH" id="7HO-ug-326"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmu-Nt-hC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="fu2-8I-boi">
-                    <connections>
-                        <outlet property="delegate" destination="WXN-4Q-sp0" id="NyC-Wq-k86"/>
-                        <outlet property="searchBar" destination="bGl-pI-L6u" id="gdv-f8-Wde"/>
-                        <outlet property="searchContentsController" destination="WXN-4Q-sp0" id="lYf-V9-6pD"/>
-                        <outlet property="searchResultsDataSource" destination="WXN-4Q-sp0" id="Rvx-7l-T1N"/>
-                        <outlet property="searchResultsDelegate" destination="WXN-4Q-sp0" id="ltf-Ab-AJc"/>
-                    </connections>
-                </searchDisplayController>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bIt-fm-9ui">
                     <connections>
                         <action selector="dropPin:" destination="WXN-4Q-sp0" id="AlD-y5-Bfk"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <searchDisplayController id="kcK-UX-IYm">
+                    <connections>
+                        <outlet property="delegate" destination="WXN-4Q-sp0" id="o4b-II-hQn"/>
+                        <outlet property="searchBar" destination="eBf-Mu-uCH" id="VE2-cm-zOj"/>
+                        <outlet property="searchContentsController" destination="WXN-4Q-sp0" id="zuh-yx-jIm"/>
+                        <outlet property="searchResultsDataSource" destination="WXN-4Q-sp0" id="CRs-QC-LmJ"/>
+                        <outlet property="searchResultsDelegate" destination="WXN-4Q-sp0" id="Aq6-Oj-xPm"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="5925" y="894"/>
         </scene>
@@ -252,7 +265,7 @@
             </objects>
             <point key="canvasLocation" x="5925" y="180"/>
         </scene>
-        <!--Add Entry-->
+        <!--Add To-do Item-->
         <scene sceneID="uRH-ae-eFx">
             <objects>
                 <viewController storyboardIdentifier="AddViewController" id="uRP-AS-2KS" customClass="AddViewController" sceneMemberID="viewController">
@@ -264,7 +277,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-qm-m4g">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-qm-m4g">
                                 <rect key="frame" x="215" y="432" width="170" height="170"/>
                                 <state key="normal" image="WhenView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,7 +343,7 @@
                             <constraint firstItem="wiQ-gx-Opp" firstAttribute="trailing" secondItem="zYe-JR-T9i" secondAttribute="trailingMargin" id="z9Z-pC-nrq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Entry" id="zqX-x4-GC1">
+                    <navigationItem key="navigationItem" title="Add To-do Item" id="zqX-x4-GC1">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Wu7-NP-7l6">
                             <connections>
                                 <action selector="addViewDone:" destination="uRP-AS-2KS" id="kFf-ex-nE4"/>
