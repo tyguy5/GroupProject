@@ -57,11 +57,6 @@ static NSString *const setLocationSeque = @"setLocation";
     // Do any additional setup after loading the view.
     [self updateWithEntry:self.entry];
 }
--(void)viewDidAppear:(BOOL)animated {
-
-
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -91,11 +86,11 @@ static NSString *const setLocationSeque = @"setLocation";
 
     if ([segue.identifier isEqualToString:setTimeSegue]) {
         WhenViewController *whenVC = segue.destinationViewController;
-        if (self.entry) {
-            // TODO: Set up date pickers to display current dates
-            whenVC.datePicker.date = self.entry.timestamp;
-            whenVC.datePicker2.date = self.entry.endTimeStamp;
-        }
+//        if (self.entry) {
+//            // TODO: Set up date pickers to display current dates
+//            whenVC.datePicker.date = self.entry.timestamp;
+//            whenVC.datePicker2.date = self.entry.endTimeStamp;
+//        }
         whenVC.delegate = self;
     }
     // Get the new view controller using [segue destinationViewController].
