@@ -91,29 +91,7 @@
     localSearch = [[MKLocalSearch alloc] initWithRequest:request];
     
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
-//        if (error != nil) {
-//            [[[UIAlertView alloc] initWithTitle:@"Map error"
-//                                        message:[error description]
-//                                       delegate:nil
-//                              cancelButtonTitle:@"OK"
-//                              otherButtonTitles:nil]show];
-//             
-//             return;
-//             
-//        }
-//        
-//        if ([response.mapItems count] == 0) {
-//            [[[UIAlertView alloc] initWithTitle:@"No results"
-//                                        message:[error description]
-//                                       delegate:nil
-//                              cancelButtonTitle:@"OK"
-//                              otherButtonTitles:nil]show];
-//             
-//             return;
-//             
-//        }
-//        
-//        results = response;
+
         if (response.mapItems.count == 0)
             NSLog(@"No Matches");
         else
@@ -143,55 +121,6 @@
     
     return YES;
 }
-
-
-
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    
-//    return [results.mapItems count];
-//    
-//}
-//
-//- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    self.searchController.active = YES;
-//    self.searchController.dimsBackgroundDuringPresentation = NO;
-//    self.searchController.hidesNavigationBarDuringPresentation = NO;
-//    
-//    static NSString *identifier = @"ResultCell";
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
-//    
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-//    }
-//    
-//
-//    MKMapItem *item = results.mapItems[indexPath.row];
-//    cell.textLabel.text = item.name;
-//    cell.detailTextLabel.text = item.placemark.addressDictionary[@"Street"];
-//    
-//    return cell;
-//    
-//}
-//
-//
-//
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    self.searchController.active = YES;
-//    
-//    MKMapItem *item = results.mapItems[indexPath.row];
-//    
-//    [self.mapView addAnnotation:item.placemark];
-//    [self.mapView selectAnnotation:item.placemark animated:YES];
-//    
-//    [self.mapView setCenterCoordinate:item.placemark.location.coordinate];
-//    
-//    [self.mapView setUserTrackingMode:MKUserTrackingModeNone];
-//    
-//    
-//}
 
 
 
