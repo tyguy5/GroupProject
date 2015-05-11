@@ -26,18 +26,14 @@
     
     NSDate *end = entry.endTimeStamp;
     NSString *prettyEndDate = [formatter stringFromDate:end];
-    
-    if (prettyDate == nil) {
-        prettyDate = @"";
-    }
-    if (prettyEndDate == nil) {
-        prettyEndDate = @"";
-    }
+
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@", entry.titleOfEntry];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ to %@", prettyDate, prettyEndDate];
-    
-    return cell;
+    if (prettyEndDate && prettyDate) {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ to %@", prettyDate, prettyEndDate];
+    } else {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@""];
+    }    return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
