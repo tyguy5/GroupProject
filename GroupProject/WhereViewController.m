@@ -13,13 +13,12 @@
 @import MapKit;
 
 
-@interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate, UISearchDisplayDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
+@interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate, UISearchControllerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UISlider *distanceSlider;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) IBOutlet UISearchController *searchController;
-@property (weak, nonatomic) IBOutlet UITableView *searchResultsTableView;
+@property (strong, nonatomic) UISearchController *searchController;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *fenceType;
 @property (weak, nonatomic) IBOutlet UILabel *radiusLabel;
@@ -42,9 +41,8 @@
     self.mapView.showsPointsOfInterest = YES;
     self.mapView.delegate = self;
     self.searchBar.delegate = self;
-    self.searchController.delegate = self;
+
     
-    self.searchResultsTableView.hidden = YES;
     
     self.locationManager = [[CLLocationManager alloc]init];
     self.locationManager.delegate = self;
@@ -105,11 +103,7 @@
         }
         
         results = response;
-        
-//        self.searchResultsTableView.hidden = NO;
-        
-        [self.searchResultsTableView reloadData];
-    }];
+}];
     
 }
 
@@ -121,6 +115,10 @@
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.searchController.active = YES;
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    self.searchController.hidesNavigationBarDuringPresentation = NO;
     
     static NSString *identifier = @"ResultCell";
     
@@ -144,10 +142,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     self.searchController.active = YES;
-     
+    
     MKMapItem *item = results.mapItems[indexPath.row];
     
-    // Don't know what these two lines do
     [self.mapView addAnnotation:item.placemark];
     [self.mapView selectAnnotation:item.placemark animated:YES];
     
