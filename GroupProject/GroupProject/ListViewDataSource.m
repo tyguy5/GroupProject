@@ -27,12 +27,15 @@
     NSDate *end = entry.endTimeStamp;
     NSString *prettyEndDate = [formatter stringFromDate:end];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", entry.titleOfEntry];
-    if (prettyEndDate && prettyDate) {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ to %@", prettyDate, prettyEndDate];
-    } else {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@""];
+    if (prettyDate == nil) {
+        prettyDate = @"";
     }
+    if (prettyEndDate == nil) {
+        prettyEndDate = @"";
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", entry.titleOfEntry];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ to %@", prettyDate, prettyEndDate];
     
     return cell;
 }
