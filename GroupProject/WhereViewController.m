@@ -13,15 +13,15 @@
 @import MapKit;
 
 
-@interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate, UISearchControllerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
+@interface WhereViewController () <MKMapViewDelegate, UITextFieldDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UISlider *distanceSlider;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) UISearchController *searchController;
+@property (weak, nonatomic) IBOutlet UITextField *searchBar;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *fenceType;
 @property (weak, nonatomic) IBOutlet UILabel *radiusLabel;
+@property(nonatomic,retain)MKAnnotationView *annotationView;
 
 
 @end
@@ -32,6 +32,8 @@
     MKLocalSearchResponse *results;
     
 }
+
+@synthesize matchingItems;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,16 +65,25 @@
 
 #pragma mark - Search methods
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+- (void)getLocalSearchResults{
     
+    
+    self.annotationView = [[MKAnnotationView alloc] init];
     
     // This cancels any previous searches
     [localSearch cancel];
     
     // This is to perform a new search
     MKLocalSearchRequest *request = [MKLocalSearchRequest new];
-    request.naturalLanguageQuery = searchBar.text;
+    request.naturalLanguageQuery = self.searchBar.text;
     request.region = self.mapView.region;
+    
+    if (!matchingItems)
+        matchingItems = [[NSMutableArray alloc]init];
+    else{
+        [matchingItems removeAllObjects];
+        [self.mapView removeAnnotations:self.mapView.annotations];
+    }
     
     
     // Not sure exactly what this does
@@ -80,79 +91,35 @@
     localSearch = [[MKLocalSearch alloc] initWithRequest:request];
     
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
-        if (error != nil) {
-            [[[UIAlertView alloc] initWithTitle:@"Map error"
-                                        message:[error description]
-                                       delegate:nil
-                              cancelButtonTitle:@"OK"
-                              otherButtonTitles:nil]show];
-             
-             return;
-             
-        }
+
+        if (response.mapItems.count == 0)
+            NSLog(@"No Matches");
+        else
+            for (MKMapItem *item in response.mapItems)
+            {
+                //                NSLog(@"name = %@", item.placemark.addressDictionary);
+                //                [matchingItems addObject:item];
+                
+                Pin *annotation = [[Pin alloc]init];
+                annotation.coordinate = item.placemark.coordinate;
+                annotation.title = item.name;
+                NSString *address = [item.placemark.addressDictionary objectForKey:@"Street"];
+                NSString *neighborhood = [item.placemark.addressDictionary objectForKey:@"SubLocality"];
+                annotation.subtitle = [NSString stringWithFormat:@"%@ - %@", address, neighborhood];
+                [self.mapView addAnnotation:annotation];
+            }
         
-        if ([response.mapItems count] == 0) {
-            [[[UIAlertView alloc] initWithTitle:@"No results"
-                                        message:[error description]
-                                       delegate:nil
-                              cancelButtonTitle:@"OK"
-                              otherButtonTitles:nil]show];
-             
-             return;
-             
-        }
-        
-        results = response;
 }];
     
 }
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+-(BOOL)textFieldShouldReturn:(UITextField*)textfield{
     
-    return [results.mapItems count];
+    [self getLocalSearchResults];
     
-}
-
-- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    [textfield resignFirstResponder];
     
-    self.searchController.active = YES;
-    self.searchController.dimsBackgroundDuringPresentation = NO;
-    self.searchController.hidesNavigationBarDuringPresentation = NO;
-    
-    static NSString *identifier = @"ResultCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-    }
-    
-
-    MKMapItem *item = results.mapItems[indexPath.row];
-    cell.textLabel.text = item.name;
-    cell.detailTextLabel.text = item.placemark.addressDictionary[@"Street"];
-    
-    return cell;
-    
-}
-
-
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    self.searchController.active = YES;
-    
-    MKMapItem *item = results.mapItems[indexPath.row];
-    
-    [self.mapView addAnnotation:item.placemark];
-    [self.mapView selectAnnotation:item.placemark animated:YES];
-    
-    [self.mapView setCenterCoordinate:item.placemark.location.coordinate];
-    
-    [self.mapView setUserTrackingMode:MKUserTrackingModeNone];
-    
-    
+    return YES;
 }
 
 

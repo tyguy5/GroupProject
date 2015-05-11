@@ -7,9 +7,6 @@
 //
 
 #import "AppearanceController.h"
-#import "TabBarController.h"
-#import "WelcomeViewController.h"
-#import "OptionsViewController.h"
 #import "AddViewController.h"
 
 @import UIKit;

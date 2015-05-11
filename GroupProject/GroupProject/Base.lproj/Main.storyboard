@@ -69,13 +69,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar clearsContextBeforeDrawing="NO" contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="eBf-Mu-uCH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-jA-KaZ">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="WXN-4Q-sp0" id="CGa-Fe-6rn"/>
-                                </connections>
-                            </searchBar>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,18 +83,20 @@
                             <constraint firstItem="k95-rI-LRg" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="96s-A5-8dC"/>
                             <constraint firstAttribute="centerX" secondItem="k95-rI-LRg" secondAttribute="centerX" constant="-0.5" id="ApE-Ls-FOZ"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="top" secondItem="omO-8C-Thb" secondAttribute="bottom" constant="25" id="GOn-YF-jqV"/>
-                            <constraint firstAttribute="trailing" secondItem="eBf-Mu-uCH" secondAttribute="trailing" id="HRe-BO-vJ5"/>
                             <constraint firstAttribute="centerX" secondItem="9bF-Sc-iDf" secondAttribute="centerX" id="JQU-zS-grh"/>
+                            <constraint firstItem="hvB-jA-KaZ" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="L3a-NU-wp4"/>
                             <constraint firstAttribute="centerX" secondItem="VFG-uM-hZM" secondAttribute="centerX" id="NJR-4Q-Loy"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="NNA-uC-TQM"/>
                             <constraint firstItem="JSC-vL-iIS" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="QId-oQ-Kby"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="UKm-eK-vn2"/>
-                            <constraint firstItem="eBf-Mu-uCH" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leading" id="Vlg-op-06t"/>
+                            <constraint firstItem="hvB-jA-KaZ" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="50" id="UOk-3e-PmU"/>
+                            <constraint firstAttribute="centerX" secondItem="hvB-jA-KaZ" secondAttribute="centerX" id="Wdn-e5-mc1"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="XXH-wX-Wv1"/>
                             <constraint firstAttribute="centerX" secondItem="65I-Oa-MUj" secondAttribute="centerX" id="aVq-uL-7Ka"/>
                             <constraint firstAttribute="centerX" secondItem="omO-8C-Thb" secondAttribute="centerX" id="bPD-73-gVp"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="eTu-5a-BOF"/>
                             <constraint firstItem="VFG-uM-hZM" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="gsf-Pz-gTm"/>
+                            <constraint firstItem="hvB-jA-KaZ" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="iOE-a1-GsD"/>
                             <constraint firstItem="9bF-Sc-iDf" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="430" id="jBe-sc-aK3"/>
                             <constraint firstItem="D9u-FZ-LD1" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="539" id="k01-xM-eBV"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="trailing" secondItem="AGa-4X-afB" secondAttribute="trailingMargin" id="kgy-7o-tOH"/>
@@ -105,25 +105,21 @@
                                 <variation key="widthClass=compact" constant="-16"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="D9u-FZ-LD1" secondAttribute="centerX" constant="-0.5" id="qf6-xf-Ben"/>
-                            <constraint firstAttribute="centerX" secondItem="eBf-Mu-uCH" secondAttribute="centerX" id="rch-2k-54S"/>
                             <constraint firstItem="JSC-vL-iIS" firstAttribute="leading" secondItem="AGa-4X-afB" secondAttribute="leadingMargin" id="rv5-2P-5QR"/>
                             <constraint firstItem="k95-rI-LRg" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="15" id="t8e-d4-j6m"/>
                             <constraint firstItem="omO-8C-Thb" firstAttribute="centerX" secondItem="JSC-vL-iIS" secondAttribute="centerX" id="x3A-Ll-662"/>
-                            <constraint firstAttribute="centerXWithinMargins" secondItem="eBf-Mu-uCH" secondAttribute="centerXWithinMargins" id="xQi-Ip-YVo"/>
                             <constraint firstItem="65I-Oa-MUj" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="470" id="yCk-21-Yst"/>
-                            <constraint firstItem="eBf-Mu-uCH" firstAttribute="top" secondItem="n1d-57-YHe" secondAttribute="bottom" constant="48" id="ywn-1D-yTJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="JSC-vL-iIS"/>
-                                <exclude reference="eBf-Mu-uCH"/>
+                                <exclude reference="hvB-jA-KaZ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="HRe-BO-vJ5"/>
-                                <exclude reference="Vlg-op-06t"/>
-                                <exclude reference="rch-2k-54S"/>
-                                <exclude reference="xQi-Ip-YVo"/>
-                                <exclude reference="ywn-1D-yTJ"/>
+                                <exclude reference="L3a-NU-wp4"/>
+                                <exclude reference="UOk-3e-PmU"/>
+                                <exclude reference="Wdn-e5-mc1"/>
+                                <exclude reference="iOE-a1-GsD"/>
                                 <exclude reference="x3A-Ll-662"/>
                                 <exclude reference="QId-oQ-Kby"/>
                                 <exclude reference="nbz-1b-4tn"/>
@@ -133,14 +129,13 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="JSC-vL-iIS"/>
-                                <include reference="eBf-Mu-uCH"/>
+                                <include reference="hvB-jA-KaZ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="HRe-BO-vJ5"/>
-                                <include reference="Vlg-op-06t"/>
-                                <include reference="rch-2k-54S"/>
-                                <include reference="xQi-Ip-YVo"/>
-                                <include reference="ywn-1D-yTJ"/>
+                                <include reference="L3a-NU-wp4"/>
+                                <include reference="UOk-3e-PmU"/>
+                                <include reference="Wdn-e5-mc1"/>
+                                <include reference="iOE-a1-GsD"/>
                                 <include reference="x3A-Ll-662"/>
                                 <include reference="QId-oQ-Kby"/>
                                 <include reference="nbz-1b-4tn"/>
@@ -160,7 +155,7 @@
                         <outlet property="fenceType" destination="D9u-FZ-LD1" id="8PH-OW-RF7"/>
                         <outlet property="mapView" destination="omO-8C-Thb" id="m92-mv-D2f"/>
                         <outlet property="radiusLabel" destination="9bF-Sc-iDf" id="CvO-GA-p72"/>
-                        <outlet property="searchBar" destination="eBf-Mu-uCH" id="7HO-ug-326"/>
+                        <outlet property="searchBar" destination="hvB-jA-KaZ" id="Ble-aP-bJD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmu-Nt-hC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,15 +164,6 @@
                         <action selector="dropPin:" destination="WXN-4Q-sp0" id="AlD-y5-Bfk"/>
                     </connections>
                 </pongPressGestureRecognizer>
-                <searchDisplayController id="kcK-UX-IYm">
-                    <connections>
-                        <outlet property="delegate" destination="WXN-4Q-sp0" id="o4b-II-hQn"/>
-                        <outlet property="searchBar" destination="eBf-Mu-uCH" id="VE2-cm-zOj"/>
-                        <outlet property="searchContentsController" destination="WXN-4Q-sp0" id="zuh-yx-jIm"/>
-                        <outlet property="searchResultsDataSource" destination="WXN-4Q-sp0" id="CRs-QC-LmJ"/>
-                        <outlet property="searchResultsDelegate" destination="WXN-4Q-sp0" id="Aq6-Oj-xPm"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="5925" y="894"/>
         </scene>
