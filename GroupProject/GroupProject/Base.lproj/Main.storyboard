@@ -116,14 +116,14 @@
                                 <exclude reference="hvB-jA-KaZ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="QId-oQ-Kby"/>
+                                <exclude reference="nbz-1b-4tn"/>
+                                <exclude reference="rv5-2P-5QR"/>
                                 <exclude reference="L3a-NU-wp4"/>
                                 <exclude reference="UOk-3e-PmU"/>
                                 <exclude reference="Wdn-e5-mc1"/>
                                 <exclude reference="iOE-a1-GsD"/>
                                 <exclude reference="x3A-Ll-662"/>
-                                <exclude reference="QId-oQ-Kby"/>
-                                <exclude reference="nbz-1b-4tn"/>
-                                <exclude reference="rv5-2P-5QR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -132,14 +132,14 @@
                                 <include reference="hvB-jA-KaZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="QId-oQ-Kby"/>
+                                <include reference="nbz-1b-4tn"/>
+                                <include reference="rv5-2P-5QR"/>
                                 <include reference="L3a-NU-wp4"/>
                                 <include reference="UOk-3e-PmU"/>
                                 <include reference="Wdn-e5-mc1"/>
                                 <include reference="iOE-a1-GsD"/>
                                 <include reference="x3A-Ll-662"/>
-                                <include reference="QId-oQ-Kby"/>
-                                <include reference="nbz-1b-4tn"/>
-                                <include reference="rv5-2P-5QR"/>
                             </mask>
                         </variation>
                     </view>
@@ -263,7 +263,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-qm-m4g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-qm-m4g">
                                 <rect key="frame" x="215" y="432" width="170" height="170"/>
                                 <state key="normal" image="WhenView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
